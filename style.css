@@ -1,0 +1,554 @@
+html{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #333333;
+	overflow-x: hidden;
+	margin: 0 auto;
+	padding:0;
+	width: 100%;
+	min-height: 100%;
+	color: #CBCBCB;
+}
+a{
+	color: #EEEEEE;
+	text-decoration: none;
+}
+.colorsvg {
+		background: #505050;
+		padding: 10em 10%;
+}
+
+svg{
+	display: block;
+}
+/* Top & Bottom Color */
+#curveUpColor path,
+#curveDownColor path {
+	fill: #505050;
+}
+/*---------HEADER----------*/
+header{
+	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+}
+/*----Burger Menu----*/
+
+
+.menu{
+	display: none;
+	position: fixed;
+	z-index: 9;
+	font-size: 32px;
+	width: 100%;
+	height: 100%;
+}
+
+.menu.see {
+	display: block;
+	background-color: #383838;
+}
+
+ul {
+	list-style-type: none;
+	position: relative;
+	text-align: left;
+	left:20%;
+	margin-top: 70px;
+	height: 100%;
+}
+
+li{
+	margin-bottom: 70px;
+}
+
+ul a:hover {
+	text-decoration: underline;
+}
+
+.arrow {
+	margin: 78px 0 0 90px;
+}
+
+.arrow img {
+	cursor: pointer;
+}
+/*---------HEADER SUITE----------*/
+.bar{
+	background-color: #FFFFFF;
+	width: 40px;
+	height: 4px;
+	margin-bottom: 8px;
+	border-radius: 30px;
+}
+.buttonburger {
+	padding-top: 80px;
+	padding-left: 90px;
+	width: 40px;
+	height: 31px;
+}
+.button{
+	cursor: pointer;
+}
+.contact{
+	float: right;
+	padding-top: 80px;
+	margin-right: 120px;
+	display: block;
+	text-align: justify;
+	width: 60px;
+}
+
+.contact img{
+	margin-left: 2px;
+	margin-bottom: 10px;
+}
+
+.textcontact{
+	font-size: 18px;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+
+/*-------- PRESENTATION --------*/
+#presentation{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 50px;
+	font-size: 55px;
+	align-items: center;
+}
+
+#presentation p{
+	margin-top: 100px;
+}
+
+.color{
+	color: #ED7D3A;
+}
+/*-------- Paragraphe------*/
+#para{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.paragraphe {
+	font-size: 19px;
+}
+/*-------- PASSIONS --------*/
+.titre{
+	font-size: 40px;
+	margin-top: 150px;
+}
+
+#passions div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 100px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+#passions div p{
+	margin-right: 60px;
+}
+
+/*-------- COMPETENCES --------*/
+#competences div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 100px;
+	padding-left: 60px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#competences div p{
+	margin-right: 60px;
+}
+
+/*-------- PARCOURS --------*/
+.timeline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.calendar{
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	padding-top: 60px;
+	left: 90%;
+}
+
+.date{
+	display: flex;
+	flex-direction: column;
+	margin-right: 200px;
+	margin-top: 13px;
+}
+.date p {
+	margin-bottom: 90px;
+}
+.travail{
+	display: flex;
+	flex-direction: column;
+	margin-top: 13px
+}
+.travail p{
+	margin-bottom: 90px;
+}
+
+.line{
+	background-color: #CBCBCB;
+	width: 4px;
+	height: 330px;
+	border-radius: 30px;
+	margin-left: -600px;
+	z-index: 0;
+}
+.timedots{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.dot{
+	background-color: #ED7D3A;
+	width: 12px;
+	height: 12px;
+	border-radius: 30px;
+	z-index: 1;
+	display: inline-block;
+	margin-left: -8px;
+	margin-bottom: 80px;
+	margin-top: 33px;
+}
+/*-------- REALISATIONS --------*/
+#realisations {
+	padding: 10em 10%;
+}
+.titre2 {
+	font-size: 40px;
+	margin-top: 100px;
+	margin-bottom: 140px;
+}
+.center{
+	text-align: center;
+	font-size: 28px;
+}
+
+.interface{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 150px;
+}
+
+.interface a{
+	text-align: center;
+	font-size: 20px;
+}
+
+.projet{
+	background-color: #ED7D3A;
+	width: 350px;
+	height: 197px;
+	margin:50px 50px 20px 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 100px 100px 0 100px;
+}
+.logo a{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+.draw{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #CDCDCD;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin:50px 50px 20px 50px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------Page Contact------------------------------------------*/
+
+.contactbody{
+	overflow-y: hidden;
+	overflow: hidden;
+}
+
+#svgFill2 {
+	opacity: 1;
+	fill: rgba(80,80,80,1);
+}
+.svgFill2 {
+	transform: matrix(1,0,0,1,0,0);
+	overflow: visible;
+	position: absolute;
+	top: 0.553px;
+	left: -0.24px;
+	width: 248.771px;
+	height: 240.362px;
+	z-index: -1;
+}
+/*------Formulaire------*/
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+form span{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+input {
+	outline: none;
+	height: 50px;
+	margin-bottom: 60px;
+	font-size: 17px;
+	border-radius: 30px;
+	padding: 0 0 0 22px;
+	border: none;
+	background-color: #505050;
+	color: #CBCBCB;
+}
+
+input[type="text"] {
+	width: 222px;
+}
+
+input:last-child {
+	width: 348px;
+	margin-left: 30px;
+}
+
+button {
+	width: 120px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	background-color: #ED7D3A;
+	color: #EEEEEE;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+textarea {
+	font-family: 'Lato', sans-serif;
+	width: 600px;
+	height: 300px;
+	background-color: #505050;
+	outline: none;
+	resize: none;
+	margin-bottom: 50px;
+	border-radius: 30px;
+	padding: 22px;
+	border: none;
+	color: #CBCBCB;
+	font-size: 17px;
+}
+
+.bodycontact p{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 82px;
+	color: #ED7D3A;
+	margin: 0 0 140px 0;
+	padding:0;
+}
+
+::placeholder{
+	color: #909090;
+}
+
+::-ms-input-placeholder {
+	color: #909090;
+}
+
+/*---Laptop---*/
+@media screen and (max-width: 1000px) 
+{
+
+		.arrow {
+			margin: 40px 0 0 50px;
+		}
+		.arrow img {
+			width: 40px;
+		}
+		.bodycontact p{
+			font-size: 62px;
+			margin: 50px 0 50px 0;
+			padding:0;
+		}
+		input[type="text"] {
+			width: 200px;
+		}
+		input:last-child {
+			width: 200px;
+			margin-left: 0px;
+		}
+		textarea {
+			width: 200px;
+			height: 250px;
+		}
+		#svgFill{
+			display: none;
+		}
+		.svgFill{
+			display: none;
+		}
+		form span{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+}
+
+
+/*---Tablet----*/
+@media screen and (max-width: 800px) 
+{
+	.titre{
+		font-size: 40px;
+		margin-top: 150px;
+		padding-left: 0px;
+	}
+	.titre2 {
+		font-size: 40px;
+		margin-top: 100px;
+		padding-left: 0px;
+		margin-bottom: 140px;
+	}
+	#passions, #competences, #realisations {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact{
+		margin-right: 80px;
+		width: 60px;
+		}
+
+	.contact img{
+		width: 50px;
+		}
+
+	.textcontact{
+		display: none;
+		}
+
+		#presentation{
+			padding-top: 50px;
+			font-size: 35px;
+		}
+
+		#presentation p{
+			margin-top: 50px;
+		}
+		#presentation img {
+			width: 200px;
+		}
+		.projet {
+			width: 250px;
+			height: 140px;
+		}
+		.projet img {
+			width: 250px;
+		}
+		.draw {
+			width: 150px;
+			height: 150px;
+		}
+		.draw img {
+			width: 80px;
+		}
+}
+
+/*-----Mobile Large-----*/
+@media screen and (max-width: 500px) 
+{
+		.contact{
+			margin-right: 50px;
+			padding-top: 60px;
+		}
+		.contact img{
+			width: 40px;
+		}
+		#presentation{
+			padding-top: 50px;
+			font-size: 25px;
+		}
+
+		#presentation p{
+			margin-top: 50px;
+		}
+		#presentation img {
+			width: 130px;
+		}
+		.bar{
+			width: 30px;
+			height: 3px;
+			margin-bottom: 6px;
+			}
+		.buttonburger {
+			padding-top: 60px;
+			padding-left: 70px;
+			}
+}
+
+/*---Mobile Medium-----*/
+@media screen and (max-width: 400px) {
+		.contact{
+			margin-right: 30px;
+			padding-top: 60px;
+		}
+
+}
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------Page Admin------------------------------------------*/

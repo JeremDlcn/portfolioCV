@@ -572,6 +572,9 @@ textarea {
 /*-----Mobile Large-----*/
 @media screen and (max-width: 500px) 
 {
+		header {
+			margin-bottom: 40px;
+		}
 		.arrow {
 			margin: 40px 0 0 50px;
 		}
@@ -588,7 +591,7 @@ textarea {
 		#presentation{
 			padding-top: 50px;
 			font-size: 25px;
-			margin-bottom: 100px;
+			margin-bottom: 80px;
 		}
 
 		#presentation p{

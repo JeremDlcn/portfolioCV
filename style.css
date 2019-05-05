@@ -111,6 +111,7 @@ ul a:hover {
 }
 
 .textcontact{
+	font-family: 'Open sans', 'Lato', sans-serif;
 	font-size: 18px;
 	padding-right: 30px;
 	margin: 0 auto;
@@ -141,6 +142,7 @@ ul a:hover {
 }
 .paragraphe {
 	font-size: 19px;
+	text-align: center;
 }
 /*-------- PASSIONS --------*/
 .titre{
@@ -570,6 +572,13 @@ textarea {
 /*-----Mobile Large-----*/
 @media screen and (max-width: 500px) 
 {
+
+		.arrow {
+			margin: 40px 0 0 50px;
+		}
+		.arrow img {
+			width: 30px;
+		}
 		.contact{
 			margin-right: 50px;
 			padding-top: 60px;
@@ -618,6 +627,9 @@ textarea {
 		.buttonburger {
 			padding-top: 60px;
 			padding-left: 50px;
+		}
+		svg {
+			height: 50px;
 		}
 }
 /*----------------------------------------------------------------------------------------------*/

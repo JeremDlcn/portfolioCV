@@ -160,7 +160,7 @@ ul a:hover {
 
 
 #passions div p{
-	margin-right: 60px;
+	margin: 10px;
 }
 
 /*-------- COMPETENCES --------*/
@@ -170,13 +170,12 @@ ul a:hover {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-top: 100px;
-	padding-left: 60px;
 	font-size: 25px;
 	font-weight: bold;
 }
 
 #competences div p{
-	margin-right: 60px;
+	margin: 10px;
 }
 
 /*-------- PARCOURS --------*/
@@ -504,65 +503,65 @@ textarea {
 		display: none;
 		}
 
-		#presentation{
+	#presentation{
 			padding-top: 50px;
 			font-size: 35px;
 		}
 
-		#presentation p{
+	#presentation p{
 			margin-top: 50px;
 		}
-		#presentation img {
+	#presentation img {
 			width: 200px;
 		}
-		.interface a{
+	.interface a{
 			font-size: 15px;
 		}
-		.logo {
+	.logo {
 			margin-top: 0;
 		}
-		.projet {
+	.projet {
 			width: 250px;
 			height: 140px;
 		}
-		.projet img {
+	.projet img {
 			width: 250px;
 		}
-		.draw {
+	.draw {
 			width: 150px;
 			height: 150px;
 		}
-		.draw img {
+	.draw img {
 			width: 80px;
 		}
-		.textparcours div {
+	.textparcours div {
 			font-size: 12px;
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
 		}
-		.textparcours div p:first-child{
+	.textparcours div p:first-child{
 			font-size: 15px;
 		}
-		.textparcours div:first-child p:first-child{
+	.textparcours div:first-child p:first-child{
 				margin-right: 150px;
 				width: 80px;
 			}
-		.textparcours div:nth-child(2) p:first-child{
+	.textparcours div:nth-child(2) p:first-child{
 				margin-right: 60px;
 				width: 200px;
 			}
-		.textparcours div:last-child p:first-child{
+	.textparcours div:last-child p:first-child{
 				margin-right: 100px;
 				width:100px;
 			}
-		.timedots {
+	.timedots {
 			display: none;
 		}
-		.line {
+	.line {
 			display: none;
 		}
-		.calendar {
+	.calendar {
 			padding-left: 0px;
 		}
 }
@@ -597,6 +596,10 @@ textarea {
 			padding-top: 60px;
 			padding-left: 70px;
 			}
+		li {
+			font-size: 20px;
+			margin-bottom: 40px;
+		}
 }
 
 /*---Mobile Medium-----*/
@@ -606,10 +609,14 @@ textarea {
 			padding-top: 60px;
 		}
 		.textparcours div p:first-child {
-				font-size: 10px;
+				font-size: 12px;
 		}
 		.textparcours div p:last-child {
-				font-size: 8px;
+				font-size: 10px;
+		}
+		.buttonburger {
+			padding-top: 60px;
+			padding-left: 50px;
 		}
 }
 /*----------------------------------------------------------------------------------------------*/

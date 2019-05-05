@@ -610,6 +610,9 @@ textarea {
 			font-size: 20px;
 			margin-bottom: 40px;
 		}
+		ul {
+			margin-top: 40px
+		}
 }
 
 /*---Mobile Medium-----*/
@@ -630,6 +633,9 @@ textarea {
 		}
 		svg {
 			height: 50px;
+		}
+		#para {
+			padding-top: 50px;
 		}
 }
 /*----------------------------------------------------------------------------------------------*/

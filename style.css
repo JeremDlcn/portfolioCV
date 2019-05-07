@@ -457,7 +457,7 @@ textarea {
 {
 
 		.arrow {
-			margin: 40px 0 0 50px;
+			margin: 80px 0 0 95px;
 		}
 		.arrow img {
 			width: 40px;
@@ -612,18 +612,15 @@ textarea {
 		header {
 			margin-bottom: 40px;
 		}
-
-
-
 		.arrow {
-			margin: 40px 0 0 50px;
+			margin: 25px 0 0 75px;
 		}
 		.arrow img {
 			width: 30px;
 		}
 		.contact{
 			margin-right: 50px;
-			padding-top: 60px;
+			padding-top: 30px;
 		}
 		.contact img{
 			width: 40px;
@@ -650,8 +647,8 @@ textarea {
 			margin-top: 14px;
 		}
 		.circle {
-			margin-top: 48px;
-			margin-left: 75px;
+			margin-top:18px;
+			margin-left: 65px;
 			width: 50px;
 			height: 50px;
 		}
@@ -667,8 +664,8 @@ textarea {
 /*---Mobile Medium-----*/
 @media screen and (max-width: 400px) {
 		.contact{
-			margin-right: 30px;
-			padding-top: 60px;
+			margin-right: 20px;
+			padding-top: 12px;
 		}
 		.textparcours div p:first-child {
 				font-size: 14px;
@@ -685,6 +682,15 @@ textarea {
 		}
 		#para {
 			padding-top: 50px;
+		}
+		.circle {
+			margin-top:0px;
+			margin-left: 45px;
+			width: 50px;
+			height: 50px;
+		}
+		.arrow {
+			margin: 5px 0 0 55px;
 		}
 }
 /*----------------------------------------------------------------------------------------------*/

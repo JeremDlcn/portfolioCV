@@ -54,10 +54,21 @@ header{
 	display: block;
 	background-color: #383838;
 }
+.circle {
+
+}
+
+.circle.visible {
+
+}
+
+ul.visible {
+
+}
 
 ul {
 	list-style-type: none;
-	position: relative;
+	position: absolute;
 	text-align: left;
 	left:20%;
 	margin-top: 70px;

@@ -52,7 +52,8 @@ header{
 
 .menu.on {
 	display: block;
-	transition: 1.5s 0s ease-in-out;
+	animation-name: appear;
+	animation-duration: 2.5s;
 }
 
 .circle {
@@ -63,7 +64,7 @@ header{
     margin-top: 60px;
 	margin-left: 80px;
     border-radius: 50% 50% 50% 50%;
-    transition: .5s ease-in-out;
+    transition: .7s ease-in-out;
     box-shadow: 0 0 0 0 #444444, 0 0 0 0 #444444;
     background-color: #444444; /* Fond cercle toujours actif(sous icon menu)*/
 }
@@ -71,6 +72,7 @@ header{
 .circle.on {
 	box-shadow: 0 0 0 100vw #444444, 0 0 0 100vh #444444; /* le fond qui s'étend*/
     border-radius: 0; /* La forme finale du fond du menu*/
+
 }
 
 
@@ -430,6 +432,18 @@ textarea {
 	color: #909090;
 }
 
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Responsive-------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------Media screen-------------------------------------------*/
+
+
+
 /*Laptop M*/
 @media screen and (max-width: 1200px) {
 	.textparcours div:first-child p:first-child{
@@ -598,6 +612,9 @@ textarea {
 		header {
 			margin-bottom: 40px;
 		}
+
+
+
 		.arrow {
 			margin: 40px 0 0 50px;
 		}
@@ -627,11 +644,17 @@ textarea {
 			width: 30px;
 			height: 3px;
 			margin-bottom: 6px;
+			margin-left: 10px;
 			}
-		.buttonburger {
-			padding-top: 60px;
-			padding-left: 70px;
-			}
+		.bar:first-child {
+			margin-top: 14px;
+		}
+		.circle {
+			margin-top: 48px;
+			margin-left: 75px;
+			width: 50px;
+			height: 50px;
+		}
 		li {
 			font-size: 20px;
 			margin-bottom: 40px;
@@ -670,4 +693,9 @@ textarea {
 /*----------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------*/
-/*----------------------------------------Page Admin------------------------------------------*/
+/*----------------------------------------Animation---------------------------------------------*/
+@keyframes appear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+
+}

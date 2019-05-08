@@ -15,6 +15,7 @@ body{
 	min-height: 100%;
 	color: #CBCBCB;
 }
+
 a{
 	color: #EEEEEE;
 	text-decoration: none;
@@ -93,13 +94,14 @@ ul a:hover {
 	text-decoration: underline;
 }
 
-.arrow {
+.arrow, .arrowcontact {
 	margin: 78px 0 0 100px;
 }
 
 .arrow img {
 	cursor: pointer;
 }
+
 /*---------HEADER SUITE----------*/
 .bar{
 	background-color: #FFFFFF;
@@ -478,12 +480,6 @@ textarea {
 			width: 200px;
 			height: 250px;
 		}
-		#svgFill{
-			display: none;
-		}
-		.svgFill{
-			display: none;
-		}
 		form span{
 			display: flex;
 			flex-direction: column;
@@ -615,7 +611,10 @@ textarea {
 		.arrow {
 			margin: 25px 0 0 75px;
 		}
-		.arrow img {
+		.arrowcontact {
+			margin: 55px 0 0 55px;
+		}
+		.arrow img, .arrowcontact img {
 			width: 30px;
 		}
 		.contact{

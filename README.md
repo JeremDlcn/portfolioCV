@@ -35,17 +35,22 @@ Les technologies utilisés dans ce projet sont:
 - **Dossier**
 	- index.html
 	- contact.html
-	- admin.html
+	- admin.php
+	- README.md
 	- main.js
 	- style.css
+	- **install**
+		-  postgreinstall.sql
 	- **image**
 	
 Le dossier contient **5** fichiers et **1** sous-dossier permettant de contenir les images
 Le fichier **index.html** qui est le fichier principale comportant la présentation, parcours,  compétences ainsi que mes réalisations.
 Le fichier **contact.html** correspond à la page contact composé d'un formulaire permettant de contacter l'administrateur.
-Le fichier **admin.html** est le fichier permettant d'administrer le site grâce à une page d'administration.
+Le fichier **admin.php** est le fichier permettant d'administrer le site grâce à une page d'administration.
+Le fichier **README.md** est le fichier d'explication du projet portfolio qui sera visible depuis github.
 Le fichier **main.js** est un fichier javascript permettant d'ajouter de l'animation au site.
 Le fichier **style.css** est le fichier css permettant de mettre en page le site.
+Le fichier **postgreinstall.sql** est le fichier contenant les paramètres de la base de données permettant  à n'importe qui de recréer la même base de données.
 
 ## Mise en place du site
 1. Téléchargez ou clonez le projet  `git clone https://github.com/JeremDlcrn/portfolioCV.git`
@@ -90,7 +95,7 @@ Remplacer ***nomUtilisateur*** et ***nomBaseDonnées*** par le nom d'utilisateur
 C'est bon votre base de données est maintenant crée et fonctionelle.
 
 ## Connexion à la page d'administration
-Rendez-vous à l'adresse suivante: localhost/portfolio/admin.html
+Rendez-vous à l'adresse suivante: localhost/portfolio/admin.php
 Vous pouvez maintenant administrer le site depuis cette page en changeant chaque partie.
 ![](https://vibrant-knuth-d6e0a8.netlify.com/adminpage.png)
 La page d'administration possède plusieurs sections symboliser par des rectangles, chaque sections correspond à une section présente sur le site, cela permet de faire le lien facilement et de savoir où se placer le contenu ajouté.

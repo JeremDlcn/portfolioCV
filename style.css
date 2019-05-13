@@ -154,11 +154,6 @@ ul a:hover {
 	align-items: center;
 }
 
-h1{
-	margin-top: 100px;
-	font-size: 55px;
-	font-weight: normal;
-}
 h3, h4{
 	font-weight: normal;
 }
@@ -433,7 +428,7 @@ textarea {
 	margin-top: 25px;
 }
 
-header p{
+.admin header p{
 	font-size: 50px;
 }
 
@@ -956,6 +951,14 @@ h2 {
 		}
 		.arrow {
 			margin: 5px 0 0 55px;
+		}
+		.interface a {
+			width: 320px;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 }
 /*----------------------------------------------------------------------------------------------*/

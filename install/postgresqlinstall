@@ -5,7 +5,7 @@
 -- Dumped from database version 11.1
 -- Dumped by pg_dump version 11.2
 
--- Started on 2019-05-11 16:38:17
+-- Started on 2019-05-15 10:52:17
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -25,6 +25,8 @@ SET row_security = off;
 CREATE SCHEMA admin;
 
 
+ALTER SCHEMA admin OWNER TO postgres;
+
 SET default_tablespace = '';
 
 SET default_with_oids = false;
@@ -40,6 +42,7 @@ CREATE TABLE admin.competences (
 );
 
 
+ALTER TABLE admin.competences OWNER TO postgres;
 
 --
 -- TOC entry 198 (class 1259 OID 24646)
@@ -52,6 +55,7 @@ CREATE TABLE admin.hobbies (
 );
 
 
+ALTER TABLE admin.hobbies OWNER TO postgres;
 
 --
 -- TOC entry 202 (class 1259 OID 24658)
@@ -66,6 +70,7 @@ CREATE TABLE admin.message (
 );
 
 
+ALTER TABLE admin.message OWNER TO postgres;
 
 --
 -- TOC entry 200 (class 1259 OID 24652)
@@ -74,14 +79,13 @@ CREATE TABLE admin.message (
 
 CREATE TABLE admin.parcours (
     id_parcours integer NOT NULL,
-    name_parcours character varying(50),
-    annee_parcours date,
-    nomtravail_parcours character varying(20),
+    name_parcours character varying(150),
     datedebuttravail_parcours date,
     datefintravail_parcours date
 );
 
 
+ALTER TABLE admin.parcours OWNER TO postgres;
 
 --
 -- TOC entry 197 (class 1259 OID 24640)
@@ -96,6 +100,7 @@ CREATE TABLE admin.presentation (
 );
 
 
+ALTER TABLE admin.presentation OWNER TO postgres;
 
 --
 -- TOC entry 201 (class 1259 OID 24655)
@@ -110,7 +115,7 @@ CREATE TABLE admin.realisations (
 );
 
 
-
+ALTER TABLE admin.realisations OWNER TO postgres;
 
 --
 -- TOC entry 203 (class 1259 OID 24664)
@@ -123,6 +128,8 @@ CREATE TABLE admin.techno (
 );
 
 
+ALTER TABLE admin.techno OWNER TO postgres;
+
 --
 -- TOC entry 2833 (class 0 OID 24649)
 -- Dependencies: 199
@@ -130,6 +137,14 @@ CREATE TABLE admin.techno (
 --
 
 COPY admin.competences (id_competences, title_competences) FROM stdin;
+1	HTML
+2	CSS
+3	Javascript
+4	Adobe XD
+5	Langage C
+6	Java
+7	Office 365
+8	FL Studio
 \.
 
 
@@ -140,6 +155,11 @@ COPY admin.competences (id_competences, title_competences) FROM stdin;
 --
 
 COPY admin.hobbies (id_hobbies, title_hobbies) FROM stdin;
+1	Vélo
+2	Design d'interface
+3	Musique sur ordinateur
+4	Course à pied
+5	Guitare
 \.
 
 
@@ -150,6 +170,9 @@ COPY admin.hobbies (id_hobbies, title_hobbies) FROM stdin;
 --
 
 COPY admin.message (id_message, name_message, mail_message, text_message) FROM stdin;
+1	Google	contact@gmail.com	Bonjour, nous avons vu votre portfolio et il nous intéresse
+2	SpaceX	contact@spacex.com	Aidez nous à lancer nos fusées grâce à vos compétences
+3	Amazon	contact@amazon.com	Votre profil nous intéresse, venez chez nous pour travail
 \.
 
 
@@ -159,7 +182,10 @@ COPY admin.message (id_message, name_message, mail_message, text_message) FROM s
 -- Data for Name: parcours; Type: TABLE DATA; Schema: admin; Owner: postgres
 --
 
-COPY admin.parcours (id_parcours, name_parcours, annee_parcours, nomtravail_parcours, datedebuttravail_parcours, datefintravail_parcours) FROM stdin;
+COPY admin.parcours (id_parcours, name_parcours, datedebuttravail_parcours, datefintravail_parcours) FROM stdin;
+1	Lycée La Joliverie, Bac STI2D option Système d'information et numérique	2017-09-12	2018-06-21
+2	Travail Saisonnier, Thales Group Cholet	2018-07-02	2018-07-01
+3	Ingésup Ynov Campus, Bachelor en Informatique	2018-09-22	2023-06-21
 \.
 
 
@@ -170,6 +196,7 @@ COPY admin.parcours (id_parcours, name_parcours, annee_parcours, nomtravail_parc
 --
 
 COPY admin.presentation (id_presentation, name_presentation, text_presentation, photochemin_presentation) FROM stdin;
+1	Delécrin Jérémie	Je suis étudiant en première année d'informatique à Ynov Campus. Je souhaite orienté mon parcours vers le développement logiciel, j'aime aussi créer des interfaces permettant de simplifier et améliorer la vie des utilisateurs, je m'intéresse à d'autres sujets comme le Design en Web	image/profil.png
 \.
 
 
@@ -180,6 +207,12 @@ COPY admin.presentation (id_presentation, name_presentation, text_presentation, 
 --
 
 COPY admin.realisations (id_realisations, name_realisations, imagechemin_realisations, lien_realisations) FROM stdin;
+1	Voilier Handicap	image/voilier.png	https://voilierhandicap.000webhostapp.com/
+2	PhoneView	image/choosephone.png	http://choosephone.000webhostapp.com/
+3	Bloom	image/bloom.png	https://xd.adobe.com/view/0e55b92c-c74d-4315-5279-d2dbc6b8447e-7864/?hints=off
+4	LPC School	image/lpc.png	#
+5	Univership	image/univership.png	https://univership.000webhostapp.com/
+6	Zelda	image/zelda.png	https://eager-engelbart-782989.netlify.com/main.html
 \.
 
 
@@ -190,10 +223,13 @@ COPY admin.realisations (id_realisations, name_realisations, imagechemin_realisa
 --
 
 COPY admin.techno (id_techno, title_techno) FROM stdin;
+1	HTML
+2	CSS
+3	Javascript
 \.
 
 
--- Completed on 2019-05-11 16:38:17
+-- Completed on 2019-05-15 10:52:18
 
 --
 -- PostgreSQL database dump complete

@@ -5,7 +5,7 @@
 -- Dumped from database version 11.1
 -- Dumped by pg_dump version 11.2
 
--- Started on 2019-05-15 10:52:17
+-- Started on 2019-05-15 11:46:31
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -229,7 +229,7 @@ COPY admin.techno (id_techno, title_techno) FROM stdin;
 \.
 
 
--- Completed on 2019-05-15 10:52:18
+-- Completed on 2019-05-15 11:46:31
 
 --
 -- PostgreSQL database dump complete

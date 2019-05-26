@@ -1,3 +1,28 @@
+<?php
+try
+{
+	$bdd = new PDO('pgsql:host=localhost;dbname=Portfolio', 'postgres', 'MpFleXoP', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch (Exception $e)
+{
+        die('Erreur : ' . $e->getMessage());
+}
+
+ if(isset($_POST['name_message']) && isset($_POST['mail_message']) && isset($_POST['text_message'])){
+
+        // ajout d'entrée dans la table plante de la base de données plante.
+    $req2 = $bdd->prepare('INSERT INTO admin.message(name_message, mail_message, text_message) VALUES(:name_message, :mail_message, :text_message)');
+
+    $req2 -> execute(array(
+        'name_message' => $_POST['name_message'],
+        'mail_message' => $_POST['mail_message'],
+        'text_message' => $_POST['text_message']
+    ));
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -21,12 +46,12 @@
 		<p>Contact</p>
 
 		<!-- Formulaire -->
-		<form method="post" action="index.php">
+		<form method="post" action="contact.php">
 			<span>
-				<input type="text" name="nom" placeholder="Nom" /><!-- Champ d'entrée du nom -->
-				<input type="email" name="mail" placeholder="Adresse mail" required /><!-- Champ d'entrée du mail -->
+				<input type="text" name="name_message" placeholder="Nom" /><!-- Champ d'entrée du nom -->
+				<input type="email" name="mail_message" placeholder="Adresse mail" required /><!-- Champ d'entrée du mail -->
 			</span>
-			<textarea name="message" placeholder="Saisissez votre message"></textarea><!-- Champ d'entrée du message -->
+			<textarea name="text_message" placeholder="Saisissez votre message"></textarea><!-- Champ d'entrée du message -->
 			<button type="submit" name="Envoyer">Envoyer</button><!--bouton d'envoi du formulaire-->
 		</form>
 

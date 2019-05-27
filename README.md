@@ -44,7 +44,7 @@ Les technologies utilisés dans ce projet sont:
 		-  postgreDatabase.sql
 	- **image**
 	
-Le dossier contient **5** fichiers et **1** sous-dossier permettant de contenir les images
+Le dossier contient **5** fichiers et **2** sous-dossier permettant de contenir les images
 Le fichier **index.php** qui est le fichier principale comportant la présentation, parcours,  compétences ainsi que mes réalisations.
 Le fichier **contact.php** correspond à la page contact composé d'un formulaire permettant de contacter l'administrateur.
 Le fichier **admin.php** est le fichier permettant d'administrer le site grâce à une page d'administration.
@@ -98,14 +98,14 @@ Remplacer ***nomUtilisateur*** et ***nomBaseDonnées*** par le nom d'utilisateur
 Votre base de données est maintenant crée et fonctionelle !
 
 ## Connexion à la page d'administration
-Tout d'abord ouvrez le dossier puis sur Windows cliquez dans la barre en haut contenant le chemin du dossier, puis tapé ***cmd***  et appuyez sur la touche **entrée**.
+Tout d'abord ouvrez le dossier du portfolio, puis sur l'explorateur Windows, cliquez dans la barre en haut contenant le chemin du dossier, puis tapé ***cmd***  et appuyez sur la touche **entrée**.
 Un *Terminal* va s'ouvrir et vous devrez taper la commande suivante permettant de démarrer le serveur PHP.
 
 > php -s localhost:8000
 
 Votre serveur PHP est maintenant lancé !
 
-Lancez votre navigateur et rendez-vous à l'adresse suivante: ***localhost:8000/admin.php***
+Ouvrez votre navigateur et rendez-vous à l'adresse suivante: ***localhost:8000/admin.php***
 
 Vous pouvez maintenant administrer le site depuis cette page.
 ![](https://vibrant-knuth-d6e0a8.netlify.com/adminpage.png)

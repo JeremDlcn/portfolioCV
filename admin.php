@@ -56,7 +56,7 @@ if(isset($_POST['hobbies'])) {
     ));
 }
 
- if(isset($_POST['name_presentation']) && isset($_POST['text_presentation']) && isset($_POST['photochemin_presentation'])){
+if(isset($_POST['name_presentation']) && isset($_POST['text_presentation']) && isset($_POST['photochemin_presentation'])){
 
         // ajout d'entrée dans la table plante de la base de données plante.
     $req4 = $bdd->prepare('INSERT INTO admin.presentation(name_presentation, text_presentation, photochemin_presentation) VALUES(:name_presentation, :text_presentation, :photochemin_presentation)');
@@ -145,7 +145,7 @@ if(isset($_POST['techno'])) {
 				<span>Photo de profil</span><label for="pp">Choisir un fichier</label>
 			</div>
 			<label for="textarea">Paragraphe de présentation</label>
-			<textarea></textarea>
+			<textarea name="text_presentation"></textarea>
 			<input type="submit" value="Enregistrer">
 		</form>
 
@@ -219,16 +219,5 @@ if(isset($_POST['techno'])) {
 
 			<input type="submit" value="Enregistrer">			
 		</form>
-		<input type="submit" onclick="submitForm()" value="Enregistrer Tout">
-
-		<script>
-			submitForm = function(){
-				document.forms["form1"].submit();
-   				document.forms["form2"].submit();
-   				document.forms["form3"].submit();
-    			document.forms["form4"].submit();
-    			document.forms["form5"].submit();
-			}
-		</script>
 	</body>
 </html>

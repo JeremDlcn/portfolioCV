@@ -37,7 +37,7 @@ catch (Exception $e)
 	</head>
 	<body class="bodycontact">
 		<!--bouton de retour-->
-		<a href="index.html">
+		<a href="index.php">
 			<div class="arrowcontact">
 				<img src="image/arrow.svg" alt="retour à l'accueil"/>
 			</div>

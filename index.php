@@ -11,9 +11,13 @@ catch (Exception $e)
 $sth = $bdd->query('SELECT * FROM admin.presentation ORDER BY id DESC');
 $sth2 = $bdd->query('SELECT * FROM admin.hobbies ORDER BY id DESC');
 $sth3 = $bdd->query('SELECT * FROM admin.competences ORDER BY id_competences DESC');
-$sth4 = $bdd->query('SELECT * FROM admin.parcours ORDER BY datedebut_parcours ASC');
-$sth5 = $bdd->query('SELECT * FROM admin.realisations ORDER BY id DESC');
-$sth6 = $bdd->query('SELECT * FROM admin.techno ORDER BY id DESC');
+$sth4 = $bdd->query('SELECT * FROM admin.parcours ORDER BY datedebut_parcours ASC LIMIT 3');
+
+$sthj = $bdd->query('SELECT r.name_realisations AS nom_projet, r.lien_realisations AS lien_projet, r.imagechemin_realisations AS img_projet, th.title_techno AS nom_techno
+FROM admin.techno AS th
+RIGHT JOIN admin.realisations AS r
+ON r.id_techno = th.id');
+
 
 $row = $sth->fetch(PDO::FETCH_ASSOC);
 
@@ -142,30 +146,26 @@ $nom = explode(" ", $nom);
 			<h3 class="titre2">Réalisations</h3>
 			<h4 class="center">Sites Web/Concepts</h4>
 			<div class="interface">
-				<?php
-					while ($row5 = $sth5->fetch(PDO::FETCH_ASSOC)):
-				?>
-					<a href="<?=$row5['lien_realisations']?>">
+					<?php
+						while ($join = $sthj->fetch(PDO::FETCH_ASSOC)):
+					?>
+					<a href="<?=$join['lien_projet']?>">
 						<div class="projet">
-							<div><img src="image/<?=$row5['imagechemin_realisations']?>" alt="" /></div>
+							<div><img src="image/<?=$join['img_projet']?>" alt="" /></div>
 							<div><i class="fas fa-sort-up"></i>
-								<h4>Technologie Utilisés</h4>
-								<?php
-										while ($row6 = $sth6->fetch(PDO::FETCH_ASSOC)):
-										?>
-									<p><?=$row6['title_techno']?></p>
-									<?php
-										endwhile;
-									?>	
-								<div class="technos">
 
+								<h4>Technologie Utilisés</h4>
+								<div class="technos">
+								
+									<p><?=$join['nom_techno']?></p>
+									
 								</div>
 							</div>
-						</div><?=$row5['name_realisations']?>
-					</a>
+						</div><?=$join['nom_projet']?>
+					</a>	
 				<?php
 					endwhile;
-				?>						
+				?>					
 			</div>
 		</section>
 		<script type="text/javascript" src="main.js"></script>

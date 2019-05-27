@@ -33,24 +33,26 @@ Les technologies utilisés dans ce projet sont:
 ## Fichiers et Dossier
 
 - **Dossier**
-	- index.html
-	- contact.html
+	- index.php
+	- contact.php
 	- admin.php
+	- error.html
 	- README.md
 	- main.js
 	- style.css
 	- **install**
-		-  postgreinstall.sql
+		-  postgreDatabase.sql
 	- **image**
 	
 Le dossier contient **5** fichiers et **1** sous-dossier permettant de contenir les images
-Le fichier **index.html** qui est le fichier principale comportant la présentation, parcours,  compétences ainsi que mes réalisations.
-Le fichier **contact.html** correspond à la page contact composé d'un formulaire permettant de contacter l'administrateur.
+Le fichier **index.php** qui est le fichier principale comportant la présentation, parcours,  compétences ainsi que mes réalisations.
+Le fichier **contact.php** correspond à la page contact composé d'un formulaire permettant de contacter l'administrateur.
 Le fichier **admin.php** est le fichier permettant d'administrer le site grâce à une page d'administration.
+Le fichier **error.html** est le fichier permettant de rediriger l'utilisateur quand il a tapé une mauvaise URL.
 Le fichier **README.md** est le fichier d'explication du projet portfolio qui sera visible depuis github.
 Le fichier **main.js** est un fichier javascript permettant d'ajouter de l'animation au site.
 Le fichier **style.css** est le fichier css permettant de mettre en page le site.
-Le fichier **postgreinstall.sql** est le fichier contenant les paramètres de la base de données permettant  à n'importe qui de recréer la même base de données.
+Le fichier **postgreDatabase.sql** est le fichier contenant les paramètres de la base de données permettant  à n'importe qui de recréer la même base de données.
 
 ## Mise en place du site
 1. Téléchargez ou clonez le projet  `git clone https://github.com/JeremDlcrn/portfolioCV.git`
@@ -78,6 +80,7 @@ Puis une fois que vous avez l'icône cliquez dessus pour faire apparaître le me
 ![menu wamp](https://vibrant-knuth-d6e0a8.netlify.com/menuwamp.png)
 D'ici vous pourrez accéder à tout les outils nécessaire pour la mise en place de votre site.
 
+
 ## Installation de la Base de données
 La base de données permet de stocker des informations tel que les chemins des image, du texte ou encore des liens vers d'autre site web.
 Ils existent de nombreux types de base de données, mais dans mon cas j'ai du utiliser une base de données en PostgreSQL qui est géré par le logiciel [pgadmin 4.4](https://www.postgresql.org/download/) ( lien: [https://www.postgresql.org/download/](https://www.postgresql.org/download/) )
@@ -92,13 +95,25 @@ Enfin lancer la commande suivante dans votre terminal (cmd, terminal,...) depuis
 Remplacer ***nomUtilisateur*** et ***nomBaseDonnées*** par le nom d'utilisateur postgreSQL que vous avez choisi en installant **pgadmin** et le nom de la base de données de votre choix.
 > psql -U nomUtilisateur nombasedonnées < postgreinstall.sql
 
-C'est bon votre base de données est maintenant crée et fonctionelle.
+Votre base de données est maintenant crée et fonctionelle !
 
 ## Connexion à la page d'administration
-Rendez-vous à l'adresse suivante: localhost/portfolio/admin.php
-Vous pouvez maintenant administrer le site depuis cette page en changeant chaque partie.
+Tout d'abord ouvrez le dossier puis sur Windows cliquez dans la barre en haut contenant le chemin du dossier, puis tapé ***cmd***  et appuyez sur la touche **entrée**.
+Un *Terminal* va s'ouvrir et vous devrez taper la commande suivante permettant de démarrer le serveur PHP.
+
+> php -s localhost:8000
+
+Votre serveur PHP est maintenant lancé !
+
+Lancez votre navigateur et rendez-vous à l'adresse suivante: ***localhost:8000/admin.php***
+
+Vous pouvez maintenant administrer le site depuis cette page.
 ![](https://vibrant-knuth-d6e0a8.netlify.com/adminpage.png)
 La page d'administration possède plusieurs sections symboliser par des rectangles, chaque sections correspond à une section présente sur le site, cela permet de faire le lien facilement et de savoir où se placer le contenu ajouté.
+
+Il vous suffit ensuite d'appuyer sur les boutons dans chaque rectangle pour envoyé le texte à la base de données.
+Si vous allez sur la page du portfolio en tapant *localhost:8000* vous pourrez voir les changements.
+
 ## Conception du site & Ergonomie
 Le portfolio possède un style minimaliste permet de parcourir facilement et lire rapidement le contenu et ainsi ce consacré sur l'essentiel.
 Les tons de couleurs sont sombres car le sombre permet de moins abîmer les yeux surtout dans une utilisation nocturne ou la lumière est moins présente.

@@ -3,8 +3,8 @@
 
 Le projet **portfolio/CV** est un site web crée à l'occasion d'un projet de première année en école d'informatique se déroulant du 4 avril au 7 juin 2019. 
 
-Le site se présente sous la forme d'un **"one page"** ou toutes les informations sont regroupés au même endroit pour avoir une lecture du portfolio plus rapide, et il y a aussi une page contact permettant de communiquer avec l'administrateur du site.
-Du côté administration une page y est dédié et permet de modifier chaque texte et  image.
+Le site se présente sous la forme d'un **"one page"** ou toutes les informations sont regroupés au même endroit pour avoir une lecture du portfolio plus rapide, et il y a aussi une page contact permettant de communiquer avec l'administrateur du site, un mail est envoyé à l'administrateur si un message est envoyé par le biais du formulaire de contact.
+Du côté administration une page y est dédié et permet de modifier chaque texte et image du site.
 
 ![page de presentation](https://vibrant-knuth-d6e0a8.netlify.com/mockaccueil.png)
 

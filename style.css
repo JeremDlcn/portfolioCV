@@ -409,6 +409,10 @@ input {
 	color: #CBCBCB;
 }
 
+input:focus, textarea:focus {
+	background-color: #666666;
+}
+
 input[type="text"] {
 	width: 222px;
 }
@@ -462,6 +466,9 @@ textarea {
 
 ::placeholder{
 	color: #909090;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+	color: #EEEEEE;
 }
 
 ::-ms-input-placeholder {

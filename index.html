@@ -1,30 +1,3 @@
-<?php
-try
-{
-	$bdd = new PDO('pgsql:host=localhost;dbname=Portfolio', 'postgres', 'MpFleXoP', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch (Exception $e)
-{
-        die('Erreur : ' . $e->getMessage());
-}
-
-$sth = $bdd->query('SELECT * FROM admin.presentation ORDER BY id DESC');
-$sth2 = $bdd->query('SELECT * FROM admin.hobbies ORDER BY id DESC');
-$sth3 = $bdd->query('SELECT * FROM admin.competences ORDER BY id_competences DESC');
-$sth4 = $bdd->query('SELECT * FROM admin.parcours ORDER BY datedebut_parcours ASC LIMIT 3');
-
-$sthj = $bdd->query('SELECT r.name_realisations AS nom_projet, r.lien_realisations AS lien_projet, r.imagechemin_realisations AS img_projet, th.title_techno AS nom_techno
-FROM admin.techno AS th
-RIGHT JOIN admin.realisations AS r
-ON r.id_techno = th.id');
-
-
-$row = $sth->fetch(PDO::FETCH_ASSOC);
-
-$nom = $row['name_presentation'];
-$nom = explode(" ", $nom);
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -54,10 +27,6 @@ $nom = explode(" ", $nom);
 					<a href="#realisations"><li>Réalisations</li></a>
 				</ul>
 			</nav>
-			<div class="contact">
-				<a href="contact.php"><img src="image/envelope.svg" alt="contact"></a>
-			<p class="textcontact">Contact</p>
-			</div>
 			<div class="circle">
 				<span class="button">
 					<div class="bar"></div>
@@ -70,8 +39,8 @@ $nom = explode(" ", $nom);
 
 		<!-- Présentation-->
 		 <section id="presentation">
-			<img src="image/<?=$row['photochemin_presentation']?>" alt="Photo de profil">
-			<p><span class="color"><?=$nom['0']?></span> <?=$nom['1']?></p>
+			<img src="image/profil.png" alt="Photo de profil">
+			<p><span class="color">Jérémie</span> Delécrin</p>
 		</section>
 		<!-- Top -->
 			<svg id="curveUpColor" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -81,19 +50,15 @@ $nom = explode(" ", $nom);
 
 		<!-- Texte de présentation -->
 		<section id="para">
-			<p class="paragraphe"><?=$row['text_presentation']?></p>
+			<p class="paragraphe">Je suis étudiant en première année d'informatique à Ynov Campus. Je souhaite orienté mon parcours vers le développement logiciel, j'aime créer des interfaces permettant de simplifier et améliorer la vie des utilisateurs</p>
 		</section>
 		<!--Passions-->
 		<section id="passions">
 			<h3 class="titre">Passions</h3>
 			<div>
-				<?php
-					while ($row2 = $sth2->fetch(PDO::FETCH_ASSOC)):
-					?>
-				<p><?=$row2['title_hobbies']?></p>
-				<?php
-					endwhile;
-				?>
+				<p>Vélo</p>
+				<p>Design d'interface</p>
+				<p>Guitare</p>
 			</div>
 		</section>
 
@@ -101,13 +66,13 @@ $nom = explode(" ", $nom);
 		<section id="competences">
 			<h3 class="titre">Competences</h3>
 			<div>
-				<?php
-					while ($row3 = $sth3->fetch(PDO::FETCH_ASSOC)):
-				?>
-					<p><?=$row3['title_competences']?></p>
-				<?php
-					endwhile;
-				?>
+				<p>HTML, CSS</p>
+				<p>Javascript</p>
+				<p>AdobeXD, Figma</p>
+				<p>Python</p>
+				<p>Angular / Ionic</p>
+				<p>Office 365</p>
+				<p>Gestion Projet Agiles</p>
 			</div>
 		</section>
 
@@ -122,17 +87,16 @@ $nom = explode(" ", $nom);
 									<div class="dot"></div>
 								</div>
 					<div class="textparcours">						
-							<?php
-								while ($row4 = $sth4->fetch(PDO::FETCH_ASSOC)):
-							?>
 							<div>
-								<p><?=$row4['datedebut_parcours']?> &nbsp -  &nbsp <?=$row4['datefin_parcours']?></p><p><?=$row4['name_parcours']?></p>
+								<p>2017 - 2018</p><p>Lycée La Joliverie, Bac STI2D option Système d'information et numérique</p>
 							</div>
-							<?php
-								endwhile;
-							?>	
+							<div>
+								<p>Juillet 2018</p><p>Magasinier, Thales Group Cholet</p>
+							</div>
+							<div>
+								<p>2018 - 2023</p><p>Ingésup Ynov Campus, Bachelor en Informatique</p>
+							</div>
 					</div>
-
 				</div>
 		</section>
 		</div>
@@ -146,26 +110,18 @@ $nom = explode(" ", $nom);
 			<h3 class="titre2">Réalisations</h3>
 			<h4 class="center">Sites Web/Concepts</h4>
 			<div class="interface">
-					<?php
-						while ($join = $sthj->fetch(PDO::FETCH_ASSOC)):
-					?>
-					<a href="<?=$join['lien_projet']?>">
+					<a href="https://voilierhandicap.000webhostapp.com/index.html">
 						<div class="projet">
-							<div><img src="image/<?=$join['img_projet']?>" alt="" /></div>
+							<div><img src="image/voilier.png" alt="" /></div>
 							<div><i class="fas fa-sort-up"></i>
-
 								<h4>Technologie Utilisés</h4>
 								<div class="technos">
-								
-									<p><?=$join['nom_techno']?></p>
-									
+									<p>CSS</p>
 								</div>
 							</div>
-						</div><?=$join['nom_projet']?>
+						</div>Nom du projet
 					</a>	
-				<?php
-					endwhile;
-				?>					
+		
 			</div>
 		</section>
 		<script type="text/javascript" src="main.js"></script>

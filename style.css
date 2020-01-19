@@ -61,6 +61,104 @@ a{
 	text-decoration: none;
 }
 
+#cover {
+	height: 100vh;
+}
+
+#portfolio {
+	height: 85%;
+	background: url('img/bg-img.png') no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#portfolio h1 {
+	color: var(--white);
+	font-size: 3rem;
+	position: absolute;
+	top: 4vh;
+	left: 4vw;
+}
+
+#sidePanel {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#sidePanel div:first-of-type {
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.name {
+	font-size: 10rem;
+	mix-blend-mode: screen;
+	background-color: var(--white);
+	display: flex;
+	align-items: flex-end;
+	text-indent: -20px;
+}
+
+.name:first-of-type {
+	padding-top: 50%;
+}
+
+#sidePanel div:last-of-type {
+	display: flex;
+	align-items: center;
+	background-color: var(--white);
+	height: 30%;
+}
+#sidePanel img{
+	width: 100px;
+}
+
+#sidePanel p {
+	margin-left: 20px;
+}
+
+#scroll {
+	height: 15%;
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#scroll img {
+	width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Responsive-------------------------------------------*/
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="218.718" viewBox="0 0 115 218.718">
+  <g id="Groupe_95" data-name="Groupe 95" transform="translate(-628.394 -746.099)">
+    <g id="mouse" transform="translate(637.565 746.099)">
+      <g id="Groupe_68" data-name="Groupe 68" transform="translate(0)">
+        <g id="Groupe_67" data-name="Groupe 67">
+          <path id="Tracé_4" data-name="Tracé 4" d="M125.913,0C98.239,0,75.726,22.867,75.726,50.973V91.565c0,28.106,22.513,50.972,50.187,50.972S176.1,119.74,176.1,91.721V50.973C176.1,22.867,153.585,0,125.913,0ZM166.66,91.721c0,22.815-18.278,41.377-40.747,41.377S85.166,114.465,85.166,91.563V50.973c0-22.9,18.279-41.534,40.747-41.534S166.66,28.071,166.66,50.973Z" transform="translate(-75.726)"/>
+        </g>
+      </g>
+      <g id="Groupe_70" data-name="Groupe 70" transform="translate(45.467 39.017)">
+        <g id="Groupe_69" data-name="Groupe 69">
+          <path id="Tracé_5" data-name="Tracé 5" d="M243.766,140.15a4.72,4.72,0,0,0-4.72,4.72v16.519a4.72,4.72,0,1,0,9.44,0V144.87A4.72,4.72,0,0,0,243.766,140.15Z" transform="translate(-239.046 -140.15)"/>
+        </g>
+      </g>
+    </g>
+    <text id="scroll" transform="translate(628.394 951.818)" font-size="48" font-family="Larsseit"><tspan x="0" y="0">scroll</tspan></text>
+  </g>
+</svg>

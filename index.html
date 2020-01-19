@@ -2,128 +2,135 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Ce site est mon Portfolio/CV il vous permet connaître mes compétences et mes projets réalisés.">
-		<meta name="keywords" content="Portfolio, CV, Compétences, Informatique, Développement, Ynov, B1, première année, projets">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<meta name="description" content="Ce site est mon Portfolio il vous permet connaître mes compétences et mes projets réalisés.">
+		<meta name="keywords" content="Portfolio, CV, Compétences, Informatique, Développement, Ynov, projets">
 		<link rel="icon" type="image/png" href="image/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<!--Menu-->
- 		<header>
-			<nav class="menu">
-				<div class="arrow">
-					<img src="image/arrow.svg" alt="retour à l'accueil"/>
-				</div>
-				<ul>
-					<a href="#"><li>Présentation</li></a>
-					<a href="#passions"><li>Hobbies</li></a>
-					<a href="#competences"><li>Compétences</li></a>
-					<a href="#parcours"><li>Parcours</li></a>
-					<a href="#realisations"><li>Réalisations</li></a>
-				</ul>
-			</nav>
-			<div class="circle">
-				<span class="button">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</span>
-			</div>
-		</header>
-
-
-		<!-- Présentation-->
-		 <section id="presentation">
-			<img src="image/profil.png" alt="Photo de profil">
-			<p><span class="color">Jérémie</span> Delécrin</p>
-		</section>
-		<!-- Top -->
-			<svg id="curveUpColor" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 100 C 20 0 50 0 100 100 Z"/>
-			</svg>
-			<div class="colorsvg">
-
-		<!-- Texte de présentation -->
-		<section id="para">
-			<p class="paragraphe">Je suis étudiant en première année d'informatique à Ynov Campus. Je souhaite orienté mon parcours vers le développement logiciel, j'aime créer des interfaces permettant de simplifier et améliorer la vie des utilisateurs</p>
-		</section>
-		<!--Passions-->
-		<section id="passions">
-			<h3 class="titre">Passions</h3>
-			<div>
-				<p>Vélo</p>
-				<p>Design d'interface</p>
-				<p>Guitare</p>
-			</div>
-		</section>
-
-		<!--Compétences-->
-		<section id="competences">
-			<h3 class="titre">Competences</h3>
-			<div>
-				<p>HTML, CSS</p>
-				<p>Javascript</p>
-				<p>AdobeXD, Figma</p>
-				<p>Python</p>
-				<p>Angular / Ionic</p>
-				<p>Office 365</p>
-				<p>Gestion Projet Agiles</p>
-			</div>
-		</section>
-
-		<!--Parcours-->
-		<section id="parcours">
-			<h3 class="titre">Parcours</h3>
-				<div class="calendar">
-								<div class="line"></div>
-								<div class="timedots">
-									<div class="dot"></div>
-									<div class="dot"></div>
-									<div class="dot"></div>
-								</div>
-					<div class="textparcours">						
-							<div>
-								<p>2017 - 2018</p><p>Lycée La Joliverie, Bac STI2D option Système d'information et numérique</p>
-							</div>
-							<div>
-								<p>Juillet 2018</p><p>Magasinier, Thales Group Cholet</p>
-							</div>
-							<div>
-								<p>2018 - 2023</p><p>Ingésup Ynov Campus, Bachelor en Informatique</p>
-							</div>
+		<section id="cover">
+			<section id="portfolio">
+				<div id="sidePanel">
+					<h1>Jérémie<br>Delécrin</h1>
+					<div>
+						<img src="img/profil.png" alt="profil">
+						<p>Étudiant en Développement Web<br>
+						Passionné par le UI / UX Design</p>
 					</div>
 				</div>
+				<p>Portfolio</p>
+			</section>
+			<section id="scroll">
+				<img src="img/scroll.png" alt="scroll">
+			</section>
 		</section>
-		</div>
-		<!-- Bottom -->
-			<svg id="curveDownColor" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 0 C 50 100 80 100 100 0 Z"/>
-			</svg>
-
-		<!--Réalisations-->
-		<section id="realisations">
-			<h3 class="titre2">Réalisations</h3>
-			<h4 class="center">Sites Web/Concepts</h4>
-			<div class="interface">
-					<a href="https://voilierhandicap.000webhostapp.com/index.html">
-						<div class="projet">
-							<div><img src="image/voilier.png" alt="" /></div>
-							<div><i class="fas fa-sort-up"></i>
-								<h4>Technologie Utilisés</h4>
-								<div class="technos">
-									<p>CSS</p>
-								</div>
-							</div>
-						</div>Nom du projet
-					</a>	
-		
+		<section id="skills">
+			<h2>Compétences</h2>
+			<div class="skillContainer">
+				<img src="img/js.png" alt="Javascript">
+				<p>Javascript</p>
 			</div>
+			<div class="skillContainer">
+				<img src="img/python.png" alt="Python">
+				<p>Python</p>
+			</div>	
+			<div class="skillContainer">
+				<img src="img/ionic.png" alt="Ionic">
+				<p>Ionic</p>
+			</div>
+			<div class="skillContainer">
+				<img src="img/angular.png" alt="Angular">
+				<p>Angular</p>
+			</div>	
+			<div class="skillContainer">
+				<img src="img/html.png" alt="HTML">
+				<p>HTML</p>
+			</div>
+			<div class="skillContainer">
+				<img src="img/css.png" alt="CSS">
+				<p>CSS</p>
+			</div>	
+			<div class="skillContainer">
+				<img src="img/adobexd.png" alt="Adobe XD">
+				<p>Adobe XD</p>
+			</div>
+			<div class="skillContainer">
+				<img src="img/c.png" alt="Langage C">
+				<p>Langage C</p>
+			</div>									
 		</section>
+		<section id="projects">
+			<h2>Réalisations</h2>
+			<div class="projectContainer">
+				<img src="img/voilier.png" alt="image du projet">
+				<div>
+					<h3>Voilier Handicap</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>IoT & Mobile</b>
+			</div>
+			<div class="projectContainer">
+				<img src="img/cow-snack.png" alt="image du projet">
+				<div>
+					<h3>Cow-Snack</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>Site Web</b>
+			</div>
+			<div class="projectContainer">
+				<img src="img/dailyui.png" alt="image du projet">
+				<div>
+					<h3>DailyUI</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>UI / UX Design</b>
+			</div>
+			<div class="projectContainer">
+				<img src="img/univership.png" alt="image du projet">
+				<div>
+					<h3>Univership</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>Site web</b>
+			</div>	
+			<div class="projectContainer">
+				<img src="img/smile.png" alt="image du projet">
+				<div>
+					<h3>Smile</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>Jeu de société</b>
+			</div>
+			<div class="projectContainer">
+				<img src="img/blog.png" alt="image du projet">
+				<div>
+					<h3>Blog</h3>
+					<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
+				</div>
+				<b>Site web</b>
+			</div>							
+		</section>
+		<section id="contact">
+			<h2>Contactez-moi : )</h2>
+			<div>
+				<input type="text" name="">
+				<button title="copy to clipboard"><img src="img/out.png" alt="copier"></button>	
+			</div>	
+			
+		</section>
+		<footer>
+			<div id="social">
+				<img src="img/twitter.png" alt="Twitter">
+				<img src="img/dribbble.png" alt="Dribbble">
+				<img src="img/linkedin.png" alt="Linkedin">
+			</div>
+			<div>
+				<p>Back to top</p>
+				<img src="img" alt="Renvoi vers le haut de la page">
+			</div>
+		</footer>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

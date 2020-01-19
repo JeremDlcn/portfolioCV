@@ -16,6 +16,9 @@
 	--css: #71B2DE;
 	--angular: #DD0031;
 	--ionic: #4689FE;
+
+	/*Shadow*/
+	--shadow: 2px 4px 15px 2px rgba(126, 126, 126, 0.2);
 }
 
 
@@ -63,6 +66,7 @@ a{
 
 #cover {
 	height: 100vh;
+	margin-bottom: 15rem;
 }
 
 #portfolio {
@@ -77,8 +81,8 @@ a{
 	color: var(--white);
 	font-size: 3rem;
 	position: absolute;
-	top: 4vh;
-	left: 4vw;
+	top: 8vh;
+	left: 5vw;
 }
 
 #sidePanel {
@@ -96,7 +100,7 @@ a{
 }
 
 .name {
-	font-size: 10rem;
+	font-size: 10vw;
 	mix-blend-mode: screen;
 	background-color: var(--white);
 	display: flex;
@@ -105,7 +109,7 @@ a{
 }
 
 .name:first-of-type {
-	padding-top: 50%;
+	padding-top: 100%;
 }
 
 #sidePanel div:last-of-type {
@@ -116,6 +120,8 @@ a{
 }
 #sidePanel img{
 	width: 100px;
+	margin-left:4vw;
+	margin-right: 2rem;
 }
 
 #sidePanel p {
@@ -137,25 +143,188 @@ a{
 
 
 
+#skills h2, #project h2 {
+	font-size: 3rem;
+	color: var(--title-font);
+	margin-bottom: 4rem;
+}
+
+#skills, #project {
+	margin-bottom: 11rem;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+#skills section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skillContainer {
+	background-color: var(--light-gray);
+	margin: 40px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	border-radius: 25px;
+}
+
+.skillContainer p {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: var(--white);
+	margin: 1rem 0;
+}
 
 
+#project {
+	display: flex;
+	flex-direction: column;
+}
+
+#project .row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.row > div:last-of-type {
+	margin-top: 6rem;
+}
+
+.projectContainer > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.projectContainer > img{
+	border-radius: 15px;
+	box-shadow: var(--shadow);
+	margin-bottom: 20px;
+}
+
+.projectContainer h3{
+	font-size: 2rem;
+}
 
 
+.projectContainer b{
+	opacity: .4;
+	font-size: .9rem;
+}
+
+.projectContainer a{
+	display: flex;
+	align-items: center;
+}
+
+.projectContainer a img{
+	margin-left: 10px;
+}
+
+#contact {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--light-gray);
+}
+
+#contact h2 {
+	color: var(--font-smooth);
+	font-size: 2.3rem;
+}
+
+#contact div {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+#contact input {
+	border: none;
+	height: 100%;
+	min-width: 280px;
+	border-radius: 5px 0 0 5px;
+	padding-left: 10px;
+	font-size: 1.1rem;
+	outline: none;
+	color: var(--font-smooth);
+}
+
+#contact button {
+	border: none;
+	height: 100%;
+	width: 40px;	
+	background-color: var(--button-color);
+	border-radius: 0 5px 5px 0;
+}
+
+#contact img {
+	margin-top: 2px;
+	width: 16px;
+}
 
 
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--footer-gray);
+	padding: 2rem 3rem;
+}
+
+footer div, footer a {
+	display: flex;
+	align-items: center;
+}
+
+#social img {
+	margin: 0 1rem;
+}
+
+footer > div:last-of-type p{
+	margin-right: 10px;
+	color: var(--title-font);
+}
 
 
+/*Colors By technologies*/
+.js {
+	background-color: var(--js);
+}
 
+.py {
+	background-color: var(--py);
+}
 
+.xd {
+	background-color: var(--xd);
+}
 
+.c {
+	background-color: var(--c);
+}
 
+.html {
+	background-color: var(--html);
+}
 
+.css {
+	background-color: var(--css);
+}
 
+.ionic {
+	background-color: var(--ionic);
+}
 
-
-
-
-
+.angular {
+	background-color: var(--angular);
+}
 
 
 

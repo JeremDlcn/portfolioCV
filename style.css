@@ -129,11 +129,12 @@ a{
 }
 
 #scroll {
-	height: 15%;
+	height: 25%;
 	background-color: var(--light-gray);
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	padding-top: 2rem;
 }
 
 #scroll img {
@@ -153,6 +154,7 @@ a{
 	margin-bottom: 11rem;
 	padding-left: 10vw;
 	padding-right: 10vw;
+	position: relative;
 }
 
 #skills section {
@@ -194,7 +196,7 @@ a{
 	margin-top: 6rem;
 }
 
-.projectContainer > div {
+.projectContainer > div, .info > div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -206,12 +208,12 @@ a{
 	margin-bottom: 20px;
 }
 
-.projectContainer h3{
+h3{
 	font-size: 2rem;
 }
 
 
-.projectContainer b{
+b{
 	opacity: .4;
 	font-size: .9rem;
 }
@@ -285,12 +287,138 @@ footer div, footer a {
 
 #social img {
 	margin: 0 1rem;
+	width: 25px;
 }
 
 footer > div:last-of-type p{
 	margin-right: 10px;
 	color: var(--title-font);
 }
+
+.shape1, .shape2, .shape3 {
+	background-color: var(--light-gray);
+	position: absolute;
+	height: 350px;
+	z-index: -2;
+}
+
+.shape1 {
+	top: 250px;
+	right: 0;
+	width: 60vw;
+}
+
+.shape2 {
+	top: 250px;
+	left: 0;
+	width: 20vw;
+}
+
+.shape3 {
+	bottom: 250px;
+	right: 0;
+	width: 10vw;
+}
+
+
+/*Détails des projets*/
+dialog {
+	background-color: var(--white);
+	color: var(--body-font);
+	border: none;
+	padding: 2rem;
+	border-radius: 25px;
+	box-shadow: var(--shadow);
+	max-width: 90vw;
+	position: fixed;
+	top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+dialog[open] {
+  animation: appear .7s cubic-bezier(0, 1.8, 1, 1.8);
+}
+
+dialog::backdrop {
+  background: rgba(255, 255, 255, .5);
+}
+
+#details main {
+	display: flex;
+	flex-direction: column;
+}
+
+main > section {
+	display: flex;
+	flex-direction: row;
+}
+main > section:first-of-type {
+	margin-bottom: 2rem;
+}
+
+.main-img {
+	height: 100%;
+}
+.main-img img{
+	width: 62vh;
+	height: 100%;
+	margin-right: 2rem;
+	border-radius: 10px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.info > div {
+	align-items: center;
+	width: 100%;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.info > p {
+	margin-top: 2vh;
+	max-width: 500px;
+	font-size: .9rem;
+}
+.info h2 {
+	margin-top: 1rem;
+	font-size: .9rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+.info h2 + div {
+	justify-content: flex-start;
+}
+
+.used {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.used img  {
+	width: 75px;
+}
+.used p {
+	font-size: .8rem;
+}
+
+.more {
+	flex-wrap: wrap;
+}
+
+.more img {
+	width: 25vh;
+	margin-right: 2rem;
+	border-radius: 5px;
+}
+
 
 
 /*Colors By technologies*/
@@ -327,32 +455,125 @@ footer > div:last-of-type p{
 }
 
 
-
+.fill {
+	display: none;
+}
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Responsive-------------------------------------------*/
 
 /*Laptop M*/
 @media screen and (max-width: 1200px) {
-	
+		.row > div {
+		margin-top: 6rem;
+	}
+
 }
 
 /*---Laptop S---*/
 @media screen and (max-width: 1000px) 
 {
 
+	#portfolio h1{
+		display: none;
+	}
+
+	#sidePanel {
+		width: 100%;
+		height: 85vh;
+		justify-content: flex-start;
+
+	}
+
+	#sidePanel div:first-of-type{
+		height: 100%;
+		justify-content: flex-end;
+	}
+	.fill {
+		display: block;
+		background-color: var(--white);
+		height: 100%;
+	}
+	.name {
+		font-size: 20vw;
+	}
+
+	.name:first-of-type {
+		padding-top: 0;
+	}
+
+	#sidePanel div:last-of-type {
+		display: none;
+	}
+
+	main {
+		width: 70vw;
+	}
+	main > section:first-of-type {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.main-img {
+		display: flex;
+		justify-content: center;
+	}
+	.main-img img {
+		width: 100%;
+		margin-bottom: 2rem;
+		margin-right: 0;
+	}
+	.info > p {
+		margin-top: 0;
+	}
+	.info h2 {
+		margin-bottom: 2px;
+	}
+	.used img {
+		width: 70px;
+	}
+	.used p {
+		font-size: .66rem;
+	}
+	.more img {
+		width: 100px;
+		margin: 1rem .5rem 0 .5rem;
+	}
 }
 
 
-/*---Tablet----*/
-@media screen and (max-width: 800px) 
-{
-	
-}
 
 /*-----Mobile Large-----*/
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 600px) 
 {
-		
+	.projectContainer > img {
+		width: 60vw;
+		border-radius: 10px;
+	}	
+	.projectContainer h3 {
+		font-size: 1.2rem;
+	}
+	#contact input {
+		min-width: 50vw;
+	}
+	#skills h2, #project h2 {
+		font-size: 2rem;
+	}
+	.info > div:first-of-type {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.info > p {
+		font-size: .7rem;
+	}
+	.info h2 {
+		font-size: .6rem;
+	}
+	.used img {
+		width: 40px;
+	}
+	.more img {
+		width:75px;
+	}
 }
 
 /*---Mobile Medium-----*/
@@ -363,3 +584,17 @@ footer > div:last-of-type p{
 
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Animation-------------------------------------------*/
+
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,6 +1,7 @@
-const projet = [
+const database = [
 	{
 		title: 'Cow-snack',
+		cover: 'cow-snack.png',
 		category: 'Site web',
 		link: 'https://cow-snack.fr',
 		date: 'Octobre 2019',
@@ -34,6 +35,7 @@ const projet = [
 	},
 	{
 		title: 'DailyUI',
+		cover: 'dailyui.png',
 		category: 'UI / UX Design',
 		link: 'https://twitter.com/JeremDlcn',
 		date: 'Novembre 2019',
@@ -48,6 +50,7 @@ const projet = [
 	},
 	{
 		title: 'Univership',
+		cover: 'univership.png',
 		category: 'Site web',
 		link: 'https://univership.000webhostapp.com/',
 		date: 'Janvier 2020',
@@ -78,6 +81,7 @@ const projet = [
 	},
 	{
 		title: 'Smile',
+		cover: 'smile.png',
 		category: 'Jeu de Société & Site Web',
 		link: 'https://smile-nantes.000webhostapp.com/',
 		date: 'Novembre 2019 - Janvier 2020',
@@ -95,6 +99,7 @@ const projet = [
 	},
 	{
 		title: 'TriCycle',
+		cover: 'voilier.png',
 		category: 'Application Mobile',
 		link: 'https://twitter.com/TriCycle_app',
 		date: 'Novembre 2019',
@@ -128,6 +133,7 @@ const projet = [
 	},
 	{
 		title: 'Voilier Handicap',
+		cover: 'voilier.png',
 		category: 'IoT & Site Web',
 		link: 'https://voilierhandicap.000webhostapp.com/',
 		date: 'Mars 2018',

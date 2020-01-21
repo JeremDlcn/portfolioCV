@@ -6,6 +6,7 @@
 	--title-font: #2B2B2B;
 	--body-font: #2B2B2B;
 	--footer-gray: #DFDFDF;
+	--olive-green: #446740;
 
 	/*Tehno colors*/
 	--js: #F7DF1E;
@@ -177,7 +178,7 @@ a{
 	font-size: 1.4rem;
 	font-weight: bold;
 	color: var(--white);
-	margin: 1rem 0;
+	margin: 2rem 0 1rem 0;
 }
 
 
@@ -225,6 +226,7 @@ b{
 
 .projectContainer a img{
 	margin-left: 10px;
+	width: 19px;
 }
 
 #contact {
@@ -394,6 +396,17 @@ main > section:first-of-type {
 }
 .info h2 + div {
 	justify-content: flex-start;
+}
+
+.info a{
+	color: var(--olive-green);
+	outline: none;
+	border-bottom: 1px solid;
+}
+
+.info a img {
+	margin-left: 5px;
+	width: 15px;
 }
 
 .used {

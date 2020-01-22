@@ -6,7 +6,7 @@ const database = [
 		link: 'https://cow-snack.fr',
 		date: 'Octobre 2019',
 		description: 'Cow-Snack est un site de commande de sandwich personnalisé crée avec deux autres étudiants dans le but d\'en apprendre plus sur le Javascript, le Node.js et le déploiement d\'un site sur un serveur, ce projet apportait une nouvelle expérience pour nous car nous avions jamais déployé un site sur unserveur en s\'occupant de tout la partie sécurité en plus des nouvelles technologies que nous avons utilisés pourcréer le site.',
-		sides: 2,
+		sides: 5,
 		techno: [
 			{
 				img: 'adobexd.png',
@@ -57,7 +57,7 @@ const database = [
 		link: 'https://univership.000webhostapp.com/',
 		date: 'Janvier 2020',
 		description: 'Univership est un projet étudiant de jeu vidéo spacial à monde ouvert, ma mission était de leur fournir un site web afin de présenter leur futur jeu, écrire des articles par rapport à l\'avancé du développement du jeu ou encore de futur mise à jour, le projet n\'en ai qu\'à ses débuts, cela entraîne des problèmes de temps, il manque donc des images en rapport avec le jeu pour avoir le site fini.',
-		sides: 4,
+		sides: 3,
 		techno: [
 			{
 				img: 'adobexd.png',
@@ -103,12 +103,12 @@ const database = [
 	},
 	{
 		title: 'TriCycle',
-		cover: 'voilier.png',
+		cover: 'tricycle.png',
 		category: 'Application Mobile',
 		link: 'https://twitter.com/TriCycle_app',
 		date: 'Novembre 2019',
 		description: 'TriCycle est une application permettant de scanner les codes barres de produits afin de savoir comment les recycler, aider les personnes a comprendre le fonctionnement de la chaîne de tri, aidé les gens à avoir des gestes plus écologiques ,proposer des alternatives moins couteuses et plus écologiques, avoir un regard positif sur l\'écologie',
-		sides: 2,
+		sides: 1,
 		techno: [
 			{
 				img: 'adobexd.png',

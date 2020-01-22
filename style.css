@@ -198,6 +198,10 @@ a{
 	margin-top: 6rem;
 }
 
+.projectContainer {
+	position: relative;
+}
+
 .projectContainer > div, .info > div {
 	display: flex;
 	flex-direction: row;
@@ -210,6 +214,24 @@ a{
 	margin-bottom: 20px;
 	width: 450px;
 }
+
+
+.projectContainer:hover > img {
+	filter: brightness(85%);
+}
+
+.projectContainer:hover::after {
+	content: 'Voir la description';
+	max-width: 250px;
+	color: var(--white);
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	top: 110px;
+	left: 28%;
+}
+
 
 h3{
 	font-size: 2rem;
@@ -333,6 +355,7 @@ dialog {
 	padding: 2rem;
 	border-radius: 25px;
 	box-shadow: var(--shadow);
+	z-index: 9;
 	max-width: 90vw;
 	position: fixed;
 	top: 50%;
@@ -344,9 +367,11 @@ dialog::backdrop {
   background: rgba(255, 255, 255, .5);
 }
 
+
 #details main {
 	display: flex;
 	flex-direction: column;
+	padding-top: 20px;
 }
 
 main > section {
@@ -433,6 +458,15 @@ main > section:first-of-type {
 
 .more img, .main-img img {
 	box-shadow: var(--fit-shadow);
+}
+
+.close {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+
 }
 
 /*Colors By technologies*/
@@ -584,6 +618,8 @@ main > section:first-of-type {
 	}
 	.info > p {
 		font-size: .7rem;
+			max-height: 150px;
+	overflow-y: scroll;
 	}
 	.info h2 {
 		font-size: .6rem;

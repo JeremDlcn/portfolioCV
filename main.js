@@ -28,10 +28,13 @@ function template(data) {
 	const out = document.createElement('img');
 	const category = document.createElement('b');
 	const date = document.createElement('b');
+	const close = document.createElement('img');
 	
 	details.id = "details";
 	more.className = "more";
 	out.src = "img/out.png";
+	close.src = "img/close.png";
+	close.className = "close";
 	link.innerText = "Voir";
 	preview.className = "main-img";
 	info.className = "info";
@@ -82,6 +85,7 @@ function template(data) {
 	vue.appendChild(info);
 	main.appendChild(vue);
 	main.appendChild(more);
+	details.appendChild(close);
 	details.appendChild(main);
 	document.querySelector('body').appendChild(details);
 	open();
@@ -97,11 +101,11 @@ function open() {
 
 	document.querySelector('dialog').addEventListener('click', function(event) {
 	  if(!event.target.closest('main')) {
-	    event.target.close();
-	    setTimeout(()=>{
 	    	event.target.remove();
-	    },200);
 	  }
+	});
+	document.querySelector('.close').addEventListener('click', function(event) {
+		event.target.parentElement.remove();
 	});
 
 }

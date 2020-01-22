@@ -1,5 +1,4 @@
 const projet = document.querySelectorAll('.projectContainer');
-let isExist = false;
 
 for (let i = 0; i < projet.length; i++){
 	projet[i].addEventListener('click', ()=>{
@@ -11,6 +10,7 @@ for (let i = 0; i < projet.length; i++){
 
 function template(data) {
 	let tech = data.techno;
+	let carousel = data.sides;
 	const details = document.createElement('dialog');
 	const main = document.createElement('main');
 	const vue = document.createElement('section');
@@ -18,9 +18,6 @@ function template(data) {
 	const preview = document.createElement('section');
 	const info = document.createElement('section');
 	const frontImg = document.createElement('img');
-	const img1 = document.createElement('img');
-	const img2 = document.createElement('img');
-	const img3 = document.createElement('img');
 	const div1 = document.createElement('div');
 	const div2 = document.createElement('div');
 	const div3 = document.createElement('div');
@@ -32,8 +29,6 @@ function template(data) {
 	const category = document.createElement('b');
 	const date = document.createElement('b');
 	
-
-
 	details.id = "details";
 	more.className = "more";
 	out.src = "img/out.png";
@@ -43,20 +38,11 @@ function template(data) {
 	techno.innerText ="Technologies utilisées";
 
 
-
-
-
-
-
-
 	title.innerText = data.title;
 	category.innerText = data.category;
 	date.innerText = data.date;
 	text.innerText = data.description;
 	link.href = data.link;
-	img1.src = "img/univership.png";
-	img2.src = "img/univership.png";
-	img3.src = "img/univership.png";
 	frontImg.src = "img/" + data.cover;
 
 
@@ -65,8 +51,6 @@ function template(data) {
 		let icon = document.createElement('img');
 		let techname = document.createElement('p');
 		used.className = "used";
-
-		
 		icon.src = "img/" + data.techno[i].img;
 		techname.innerText = data.techno[i].name;
 		console.log(data.techno[i].img);
@@ -76,12 +60,11 @@ function template(data) {
 	}
 
 
-
-
-
-
-
-
+	for (let y = 1; y <= carousel; y++){
+		const side = document.createElement('img');
+		side.src = "img/" + data.title + "/" + y + ".png";
+		more.appendChild(side);
+	}
 
 
 	div2.appendChild(category);
@@ -97,9 +80,6 @@ function template(data) {
 	preview.appendChild(frontImg);
 	vue.appendChild(preview);
 	vue.appendChild(info);
-	more.appendChild(img1);
-	more.appendChild(img2);
-	more.appendChild(img3);
 	main.appendChild(vue);
 	main.appendChild(more);
 	details.appendChild(main);
@@ -114,8 +94,7 @@ function tech(id) {
 
 function open() {
 	details.showModal();
-	isExist = true;
-	if(isExist) {
+
 	document.querySelector('dialog').addEventListener('click', function(event) {
 	  if(!event.target.closest('main')) {
 	    event.target.close();
@@ -124,7 +103,6 @@ function open() {
 	    },200);
 	  }
 	});
-}
 
 }
 

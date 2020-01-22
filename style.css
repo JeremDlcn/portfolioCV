@@ -485,14 +485,16 @@ main > section:first-of-type {
 /*---Laptop S---*/
 @media screen and (max-width: 1000px) 
 {
-
+	#portfolio {
+		height: 75%;
+	}
 	#portfolio h1{
 		display: none;
 	}
 
 	#sidePanel {
 		width: 100%;
-		height: 85vh;
+		height: 75vh;
 		justify-content: flex-start;
 
 	}
@@ -518,6 +520,9 @@ main > section:first-of-type {
 		display: none;
 	}
 
+	#scroll {
+		height: 35%;
+	}
 	main {
 		width: 70vw;
 	}

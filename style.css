@@ -520,9 +520,6 @@ main > section:first-of-type {
 		display: none;
 	}
 
-	#scroll {
-		height: 35%;
-	}
 	main {
 		width: 70vw;
 	}

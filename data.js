@@ -57,7 +57,7 @@ const database = [
 		link: 'https://univership.000webhostapp.com/',
 		date: 'Janvier 2020',
 		description: 'Univership est un projet étudiant de jeu vidéo spacial à monde ouvert, ma mission était de leur fournir un site web afin de présenter leur futur jeu, écrire des articles par rapport à l\'avancé du développement du jeu ou encore de futur mise à jour, le projet n\'en ai qu\'à ses débuts, cela entraîne des problèmes de temps, il manque donc des images en rapport avec le jeu pour avoir le site fini.',
-		sides: 3,
+		sides: 4,
 		techno: [
 			{
 				img: 'adobexd.png',

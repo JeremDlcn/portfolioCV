@@ -480,6 +480,10 @@ main > section:first-of-type {
 		margin-top: 6rem;
 	}
 
+	#project h2{
+		margin-bottom: 0;
+	}
+
 }
 
 /*---Laptop S---*/
@@ -592,7 +596,7 @@ main > section:first-of-type {
 		width: 40px;
 	}
 	.more img {
-		width:75px;
+		width: 25%;
 	}
 	#contact h2 {
 		font-size: 1.8rem;

@@ -333,13 +333,9 @@ dialog {
 	box-shadow: var(--shadow);
 	max-width: 90vw;
 	position: fixed;
-	top: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-dialog[open] {
-  animation: appear .7s cubic-bezier(0, 1.8, 1, 1.8);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 dialog::backdrop {
@@ -471,12 +467,16 @@ main > section:first-of-type {
 .fill {
 	display: none;
 }
+
+
+
+
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Responsive-------------------------------------------*/
 
 /*Laptop M*/
 @media screen and (max-width: 1200px) {
-		.row > div {
+	.row > div {
 		margin-top: 6rem;
 	}
 
@@ -573,15 +573,20 @@ main > section:first-of-type {
 	#skills h2, #project h2 {
 		font-size: 2rem;
 	}
-	.info > div:first-of-type {
-		flex-direction: column;
-		align-items: flex-start;
-	}
 	.info > p {
 		font-size: .7rem;
 	}
 	.info h2 {
 		font-size: .6rem;
+	}
+	.info h3 {
+		font-size: 1.5rem;
+	}
+	.info b {
+		font-size: .7rem;
+	}
+	.used {
+		margin: 0 .3rem;
 	}
 	.used img {
 		width: 40px;

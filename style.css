@@ -561,7 +561,7 @@ main > section:first-of-type {
 @media screen and (max-width: 600px) 
 {
 	.projectContainer > img {
-		width: 60vw;
+		width: 78vw;
 		border-radius: 10px;
 	}	
 	.projectContainer h3 {
@@ -588,6 +588,23 @@ main > section:first-of-type {
 	}
 	.more img {
 		width:75px;
+	}
+	#contact h2 {
+		font-size: 1.8rem;
+	}
+	#contact input, #contact button{
+		font-size: .7rem;
+		height: 70%;
+	}
+	#contact img {
+		width: 12px;
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+	#social {
+		margin-bottom: 2rem;
 	}
 }
 

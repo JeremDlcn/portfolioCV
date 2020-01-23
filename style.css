@@ -553,6 +553,7 @@ main > section:first-of-type {
 	}
 	.name {
 		font-size: 20vw;
+		text-indent: 0;
 	}
 
 	.name:first-of-type {
@@ -618,8 +619,8 @@ main > section:first-of-type {
 	}
 	.info > p {
 		font-size: .7rem;
-			max-height: 150px;
-	overflow-y: scroll;
+		max-height: 150px;
+		overflow-y: scroll;
 	}
 	.info h2 {
 		font-size: .6rem;
@@ -638,6 +639,7 @@ main > section:first-of-type {
 	}
 	.more img {
 		width: 25%;
+		height: 14%;
 	}
 	#contact h2 {
 		font-size: 1.8rem;

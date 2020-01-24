@@ -56,7 +56,6 @@ function template(data) {
 		used.className = "used";
 		icon.src = "img/" + data.techno[i].img;
 		techname.innerText = data.techno[i].name;
-		console.log(data.techno[i].img);
 		used.appendChild(icon);
 		used.appendChild(techname);
 		div3.appendChild(used);
@@ -108,63 +107,13 @@ function open() {
 		event.target.parentElement.remove();
 	});
 
+	let zoom = document.querySelectorAll('.more img');
+
+
+	for (let i = 0; i < zoom.length; i++){
+		zoom[i].addEventListener('click', ()=>{
+			zoom[i].classList.toggle('activate');
+			zoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
+		});
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*		<dialog id="details">
-			<main>
-				<section>
-					<section class="main-img">
-						<img src="img/cow-snack.png">
-					</section>
-					<section class="info">
-						<div>
-							<h3>Voilier Handicap</h3>
-							<a href="https://">Voir<img src="img/out.png" alt="Voir le site"></a>
-						</div>
-						<div>
-							<b>IoT & Mobile</b>
-							<b>12 Février 2020</b>	
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<h2>Technologies utilisées</h2>
-						<div>
-							<div class="used">
-								<img src="img/js.png">
-								<p>Javascript</p>
-							</div>
-							<div class="used">
-								<img src="img/js.png">
-								<p>Javascript</p>
-							</div>
-							<div class="used">
-								<img src="img/js.png">
-								<p>Javascript</p>
-							</div>
-						</div>
-					</section>
-				</section>
-				<section class="more">
-					<img src="img/univership.png">
-					<img src="img/univership.png">
-					<img src="img/univership.png">
-				</section>
-			</main>	
-		</dialog> */

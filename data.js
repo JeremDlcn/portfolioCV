@@ -41,7 +41,7 @@ const database = [
 		link: 'https://twitter.com/JeremDlcn',
 		date: 'Novembre 2019',
 		description: 'DailyUI est un challenge de 100jours pendant lesquelles je dois réaliser 100 interfaces/créations graphiques sur un élément imposé, pouvant aller d\'un simple icône à un landing page et les sujets sont variés et me permettent de sortir de ma zone de confort en créant des interfaces originales. Ce challenge me permet de prendre du niveau en design d\'interface tout en m\'obligeant à garder un niveau de qualité pour chacune de mes créations.',
-		sides: 3,
+		sides: 5,
 		techno: [
 			{
 				img: 'adobexd.png',
@@ -89,7 +89,7 @@ const database = [
 		link: 'https://smile-nantes.000webhostapp.com/',
 		date: 'Novembre 2019 - Janvier 2020',
 		description: 'Smile est une équipe d\étudiant ayant pour mission d\'expliquer les méthodes agiles de manière ludique à travers un jeu de société. Ce jeu de plateau fait s\'affronter 2 équipes: la première équipe représente les méthodes "classiques" de gestion de projet et la seconde représente les méthodes agiles. A chaque tour les équipes devront avancer afin de réaliser des activités pour gagner un maximum de points auprès du client, ce client décidera si l\'activité à bien été réaliser et si elle convient à ses attentes. Chaque équipe possèdent un spécificité, l\'équipe des méthodes "classiques" doit poser tout leur questions au client avant de pouvoir commencer l\'activité alors que les méthodes agiles peuvent poser des questions tout au long de l\'activité. J\'ai réalisé le site web servant au activités, les cartes et aidé dans la création des règles du jeu.',
-		sides: 3,
+		sides: 4,
 		techno: [
 			{
 				img: 'htmlcss.png',

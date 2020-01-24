@@ -453,8 +453,16 @@ main > section:first-of-type {
 	width: 25vh;
 	margin-right: 2rem;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
+.more img.activate {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transition-duration: .7s;
+}
 
 .more img, .main-img img {
 	box-shadow: var(--fit-shadow);
@@ -466,7 +474,7 @@ main > section:first-of-type {
 	position: absolute;
 	top: 20px;
 	right: 30px;
-
+	cursor: pointer;
 }
 
 /*Colors By technologies*/

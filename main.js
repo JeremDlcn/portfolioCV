@@ -1,4 +1,4 @@
-const projet = document.querySelectorAll('.projectContainer');
+const projet = document.querySelectorAll('.visual');
 
 for (let i = 0; i < projet.length; i++){
 	projet[i].addEventListener('click', ()=>{

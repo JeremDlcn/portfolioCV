@@ -257,25 +257,29 @@ a{
 	position: relative;
 }
 
+.projectContainer .visual{
+	width: auto;
+}
 .projectContainer > div, .info > div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.projectContainer > img{
+.projectContainer .visual > img{
 	border-radius: 15px;
 	box-shadow: var(--shadow);
 	margin-bottom: 20px;
 	width: 450px;
+	cursor: pointer;
 }
 
 
-.projectContainer:hover > img {
+.projectContainer .visual:hover > img {
 	filter: brightness(85%);
 }
 
-.projectContainer:hover::after {
+.projectContainer .visual:hover::after {
 	content: 'Voir la description';
 	max-width: 250px;
 	color: var(--white);

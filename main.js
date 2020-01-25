@@ -125,3 +125,26 @@ function open() {
 		});
 	}
 }
+
+
+
+// Copy 
+document.querySelector('#copyButton').addEventListener('click', ()=>{
+	let copyText = document.querySelector('#contact input');
+	copyText.select();
+	document.execCommand("copy");
+
+	let containCopy = document.createElement('div');
+	containCopy.className = "copy";
+	document.querySelector('#contact > div').appendChild(containCopy);
+	setTimeout(()=>{
+		document.querySelector('.copy').classList.add('final');
+	},50);
+	setTimeout(()=>{
+		document.querySelector('.copy').textContent = "Lien copié ✔";
+	},500);
+	setTimeout(()=>{
+		document.querySelector('.copy').remove();
+	},2000);
+
+});

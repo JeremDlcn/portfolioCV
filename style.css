@@ -11,6 +11,7 @@
 
 	/*Tehno colors*/
 	--js: #F7DF1E;
+	--js2: #f9dd00;
 	--xd: #FF26BE;
 	--py: #2D689B;
 	--c: #00599D;
@@ -566,7 +567,7 @@ main > section:first-of-type {
 	background-color: var(--js);
 }
 .color-js {
-	color: var(--js);
+	color: var(--js2);
 }
 
 .py {

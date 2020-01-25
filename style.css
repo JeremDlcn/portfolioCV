@@ -764,9 +764,11 @@ main > section:first-of-type {
 	#contact h2 {
 		font-size: 1.8rem;
 	}
-	#contact input, #contact button{
+	#contact > div {
+		height: 32px;
+	}
+	#contact input, #contact button, #contact .copy{
 		font-size: .7rem;
-		height: 70%;
 	}
 	#contact img {
 		width: 12px;

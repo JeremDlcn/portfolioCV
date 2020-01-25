@@ -107,21 +107,21 @@ function open() {
 		document.querySelector('#details').remove();
 	});
 
-	let mainZoom = document.querySelectorAll('.main-img img');
+
 	let zoom = document.querySelectorAll('.more img');
-
-
 	for (let i = 0; i < zoom.length; i++){
 		zoom[i].addEventListener('click', ()=>{
-			zoom[i].classList.toggle('activate');
-			zoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
-		});
-	}
-
-	for (let i = 0; i < mainZoom.length; i++){
-		mainZoom[i].addEventListener('click', ()=>{
-			mainZoom[i].classList.toggle('activate');
-			mainZoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
+			if (zoom[i].classList.contains('activate')) {
+				zoom[i].classList.remove('activate');
+			}
+			else {
+				for (let o = 0; o < zoom.length; o++){
+					zoom[o].classList.remove('activate');
+					zoom[o].title = '';
+				}
+				zoom[i].classList.add('activate');
+				zoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
+			}
 		});
 	}
 }

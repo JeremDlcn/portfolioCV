@@ -104,7 +104,7 @@ function open() {
 	  }
 	});
 	document.querySelector('.close').addEventListener('click', function(event) {
-		event.target.parentElement.remove();
+		document.querySelector('#details').remove();
 	});
 
 	let mainZoom = document.querySelectorAll('.main-img img');

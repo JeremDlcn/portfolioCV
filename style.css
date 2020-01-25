@@ -688,16 +688,19 @@ main > section:first-of-type {
 		height: auto;
 	}
 	#sidePanel img {
-	display: none;
+		display: none;
 	}
+
 	#sidePanel p {
 		font-size: 3vw;
 		margin: 0 0 1rem .5rem;
 		opacity: .7;
 	}
+
 	main {
 		width: 70vw;
 	}
+	
 	main > section:first-of-type {
 		flex-direction: column;
 		margin-bottom: 0;

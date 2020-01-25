@@ -107,6 +107,7 @@ function open() {
 		event.target.parentElement.remove();
 	});
 
+	let mainZoom = document.querySelectorAll('.main-img img');
 	let zoom = document.querySelectorAll('.more img');
 
 
@@ -114,6 +115,13 @@ function open() {
 		zoom[i].addEventListener('click', ()=>{
 			zoom[i].classList.toggle('activate');
 			zoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
+		});
+	}
+
+	for (let i = 0; i < mainZoom.length; i++){
+		mainZoom[i].addEventListener('click', ()=>{
+			mainZoom[i].classList.toggle('activate');
+			mainZoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
 		});
 	}
 }

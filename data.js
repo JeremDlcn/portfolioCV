@@ -54,7 +54,7 @@ const database = [
 		title: 'Univership',
 		cover: 'univership.png',
 		category: 'Site web',
-		link: 'https://univership.000webhostapp.com/',
+		link: 'https://univership.netlify.com/',
 		date: 'Janvier 2020',
 		description: 'Univership est un projet étudiant de jeu vidéo à monde ouvert sur le thème de l\'espace, ma mission pour ce projet était de leur fournir un site web afin de présenter leur futur jeu au grand public et écrire des articles par rapport à l\'avancé du développement du jeu ou encore de futur mise à jour. Le projet n\'en ai qu\'à ses débuts, il manque donc des images du jeu pour que le site réellement fini.',
 		sides: 3,

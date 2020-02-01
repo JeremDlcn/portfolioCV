@@ -108,7 +108,7 @@ const database = [
 		link: 'https://twitter.com/TriCycle_app',
 		date: 'Novembre 2019',
 		description: 'TriCycle est une application permettant de scanner les codes barres de différents produits afin de savoir comment et où les jeter/recycler, aider les personnes à comprendre le fonctionnement de la chaîne de tri, aidé les gens à avoir des gestes plus écologiques ,proposer des alternatives moins couteuses et avec moins d\'impact sur l\'environnement et à avoir un regard positif sur l\'écologie',
-		sides: 1,
+		sides: 2,
 		techno: [
 			{
 				img: 'adobexd.png',

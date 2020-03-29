@@ -742,7 +742,7 @@ main > section:first-of-type {
 /*-----Mobile Large-----*/
 @media screen and (max-width: 600px) 
 {
-	.projectContainer > img {
+	.projectContainer .visual >img {
 		width: 78vw;
 		border-radius: 10px;
 	}	

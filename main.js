@@ -1,13 +1,13 @@
 const projet = document.querySelectorAll('.visual');
 
-for (let i = 0; i < projet.length; i++){
-	projet[i].addEventListener('click', ()=>{
+for (let i = 0; i < projet.length; i++) {
+	projet[i].addEventListener('click', () => {
 		template(database[i]);
 	});
 }
 
 
-
+// create dialog
 function template(data) {
 	let tech = data.techno;
 	let carousel = data.sides;
@@ -29,7 +29,7 @@ function template(data) {
 	const category = document.createElement('b');
 	const date = document.createElement('b');
 	const close = document.createElement('img');
-	
+
 	details.id = "details";
 	more.className = "more";
 	out.src = "img/out.png";
@@ -38,18 +38,18 @@ function template(data) {
 	link.innerText = "Voir";
 	preview.className = "main-img";
 	info.className = "info";
-	techno.innerText ="Technologies utilisées";
+	techno.innerText = "Technologies utilisées";
 
 
 	title.innerText = data.title;
 	category.innerText = data.category;
 	date.innerText = data.date;
-	text.innerText = data.description;
+	text.innerHTML = data.description;
 	link.href = data.link;
 	frontImg.src = "img/" + data.cover;
 
 
-	for (let i = 0; i < tech.length; i++){
+	for (let i = 0; i < tech.length; i++) {
 		let used = document.createElement('div');
 		let icon = document.createElement('img');
 		let techname = document.createElement('p');
@@ -62,7 +62,7 @@ function template(data) {
 	}
 
 
-	for (let y = 1; y <= carousel; y++){
+	for (let y = 1; y <= carousel; y++) {
 		const side = document.createElement('img');
 		side.src = "img/" + data.title + "/" + y + ".png";
 		more.appendChild(side);
@@ -90,32 +90,28 @@ function template(data) {
 	open();
 }
 
-function tech(id) {
-	icon.src = "img/js.png";
-	techname.innerText = "Javascript"
-}
-
+// manage action with dialog
 function open() {
 	details.showModal();
 
-	document.querySelector('dialog').addEventListener('click', function(event) {
-	  if(!event.target.closest('main')) {
-	    	event.target.remove();
-	  }
+	document.querySelector('dialog').addEventListener('click', function (event) {
+		if (!event.target.closest('main')) {
+			event.target.remove();
+		}
 	});
-	document.querySelector('.close').addEventListener('click', function(event) {
+	document.querySelector('.close').addEventListener('click', function (event) {
 		document.querySelector('#details').remove();
 	});
 
 
 	let zoom = document.querySelectorAll('.more img');
-	for (let i = 0; i < zoom.length; i++){
-		zoom[i].addEventListener('click', ()=>{
+	for (let i = 0; i < zoom.length; i++) {
+		zoom[i].addEventListener('click', () => {
 			if (zoom[i].classList.contains('activate')) {
 				zoom[i].classList.remove('activate');
 			}
 			else {
-				for (let o = 0; o < zoom.length; o++){
+				for (let o = 0; o < zoom.length; o++) {
 					zoom[o].classList.remove('activate');
 					zoom[o].title = '';
 				}
@@ -128,8 +124,8 @@ function open() {
 
 
 
-// Copy 
-document.querySelector('#copyButton').addEventListener('click', ()=>{
+// Copy mail
+document.querySelector('#copyButton').addEventListener('click', () => {
 	let copyText = document.querySelector('#contact input');
 	copyText.select();
 	document.execCommand("copy");
@@ -137,14 +133,14 @@ document.querySelector('#copyButton').addEventListener('click', ()=>{
 	let containCopy = document.createElement('div');
 	containCopy.className = "copy";
 	document.querySelector('#contact > div').appendChild(containCopy);
-	setTimeout(()=>{
+	setTimeout(() => {
 		document.querySelector('.copy').classList.add('final');
-	},50);
-	setTimeout(()=>{
+	}, 50);
+	setTimeout(() => {
 		document.querySelector('.copy').textContent = "Lien copié ✔";
-	},500);
-	setTimeout(()=>{
+	}, 500);
+	setTimeout(() => {
 		document.querySelector('.copy').remove();
-	},2000);
+	}, 2000);
 
 });

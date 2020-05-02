@@ -6,6 +6,7 @@
 	--title-font: #2B2B2B;
 	--body-font: #2B2B2B;
 	--footer-gray: #F7F7F7;
+	--primary-green: #2A652E;
 	--olive-green: #446740;
 	--correct: #1FE41B;
 
@@ -392,7 +393,7 @@ b{
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;
+			align-items: center;
 }
 
 .projectContainer a img{
@@ -642,6 +643,7 @@ main > section:first-of-type {
 	font-size: .9rem;
 	font-weight: 900;
 	margin-bottom: 1rem;
+	opacity: .6;
 }
 .info h2 + div {
 	-webkit-box-pack: start;
@@ -650,12 +652,15 @@ main > section:first-of-type {
 }
 
 .info a {
-	color: var(--olive-green);
+	color: #FFFFFF;
 	outline: none;
+	background-color: #2A652E;
+	padding: .3rem .5rem;
+	border-radius: 5px;
 }
 
 .info a img {
-	margin-left: 5px;
+	margin-left: 8px;
 	width: 15px;
 }
 
@@ -797,14 +802,6 @@ main > section:first-of-type {
 
 
 
-
-.fill {
-	display: none;
-}
-
-
-
-
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Responsive-------------------------------------------*/
 
@@ -845,19 +842,16 @@ main > section:first-of-type {
 
 	#sidePanel div:first-of-type{
 		height: auto;
+		margin-bottom: 1rem;
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
 	}
-	.fill {
-		display: block;
-		background-color: var(--white);
-		height: 100%;
-		width: 100%;
-	}
 	.name {
 		font-size: 20vw;
 		text-indent: 0;
+		background-color: transparent;
+		color: white;
 	}
 
 	.name:first-of-type {
@@ -873,19 +867,33 @@ main > section:first-of-type {
 		    -ms-flex-align: start;
 		        align-items: flex-start;
 		height: auto;
+		background-color: transparent;
+		color: white;
 	}
 	#sidePanel img {
 		display: none;
 	}
 
 	#sidePanel p {
-		font-size: 3vw;
+		font-size: .8rem;
 		margin: 0 0 1rem .5rem;
 		opacity: .7;
 	}
-
-	main {
-		width: 70vw;
+	dialog{
+		top: 0;
+		left: 0;
+		width: 100vw;
+		min-height: 100vh;
+		max-width: 100vw;
+		transform: none;
+		border-radius: 0px;
+	}
+	.more img.activate {
+		width: 50%;
+		height: 18%;
+		top: initial;
+		right: 25%;
+		left: initial;
 	}
 	
 	main > section:first-of-type {

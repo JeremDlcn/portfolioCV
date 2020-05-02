@@ -1,12 +1,12 @@
 const database = [
 	{
-		title: 'Cow-snack',
-		cover: 'cow-snack.png',
-		category: 'Site web',
-		link: 'https://cow-snack.fr',
-		date: 'Octobre 2019',
-		description: 'Cow-Snack est un site de commande de <span class="bold">sandwich personnalisé</span> crée avec deux autres étudiants dans le but d\'en apprendre plus sur le JavaScript, le Node.js et le <span class="bold">déploiement d\'un site sur un serveur</span>, ce projet nous a apporté une nouvelle expérience, en s\'occupant de la <span class="bold">sécurité</span> et en apprenant de nouvelles technologies.<br><span class="bold">Mon travail sur ce projet: </span>je me suis occupé du développement Front-End et du design.',
-		sides: 5,
+		title: 'TriCycle',
+		cover: 'tricycle.png',
+		category: 'Application Mobile',
+		link: 'https://app-tricycle.com',
+		date: 'Novembre 2019 - Juin 2020',
+		description: 'TriCycle est une <span class="bold">application</span> permettant de scanner les codes barres de différents produits afin de savoir comment et où les <span class="bold">jeter/recycler</span>, aidé les utilisateurs à avoir des gestes plus <span class="bold">écologiques</span>, proposer des alternatives moins couteuses et avec moins d\'impact sur l\'environnement et à avoir un regard <span class="bold">positif</span> sur l\'écologie.<br><span class="bold">Mon travail sur ce projet: </span>Design de l\'application, du site et de l\'identité graphique, développement Front-End sur l\'application',
+		sides: 3,
 		techno: [
 			{
 				img: 'adobexd.png',
@@ -17,8 +17,8 @@ const database = [
 				name: 'HTML/CSS'
 			},
 			{
-				img: 'js.png',
-				name: 'JavaScript'
+				img: 'ionic.png',
+				name: 'Ionic'
 			},
 			{
 				img: 'nodejs.png',
@@ -29,8 +29,8 @@ const database = [
 				name: 'Nginx'
 			},
 			{
-				img: 'mysql.png',
-				name: 'MySQL'
+				img: 'mongodb.png',
+				name: 'Mongodb'
 			}
 		]
 	},
@@ -41,7 +41,7 @@ const database = [
 		link: 'https://twitter.com/JeremDlcn',
 		date: 'Novembre 2019 - Mars 2020',
 		description: 'DailyUI est un <span class="bold">challenge</span> d\'une durée de 100 jours pendant lesquelles je dois réaliser <span class="bold">100 interfaces/créations graphiques</span> sur un élément imposé, pouvant aller d\'un simple icône à une landing page. Les sujets sont <span class="bold">variés</span> et me permettent de <span class="bold">sortir</span> de ma <span class="bold">zone de confort</span> en créant des interfaces originales. Ce challenge me permet de prendre de <span class="bold">m\'améliorer</span> en design d\'interface tout en m\'obligeant à garder un bon niveau de <span class="bold">qualité</span> pour chacune de mes créations.',
-		sides: 5,
+		sides: 4,
 		techno: [
 			{
 				img: 'adobexd.png',
@@ -76,10 +76,45 @@ const database = [
 				name: 'Node.js'
 			},
 			{
-				img: 'mongodb.png',
-				name: 'MongoB'
+				img: 'sqlite.png',
+				name: 'SQLite3'
 			},
 
+		]
+	},
+	{
+		title: 'Cow-snack',
+		cover: 'cow-snack.png',
+		category: 'Site web',
+		link: '',
+		date: 'Octobre 2019',
+		description: 'Cow-Snack est un site de commande de <span class="bold">sandwich personnalisé</span> crée avec deux autres étudiants dans le but d\'en apprendre plus sur le JavaScript, le Node.js et le <span class="bold">déploiement d\'un site sur un serveur</span>, ce projet nous a apporté une nouvelle expérience, en s\'occupant de la <span class="bold">sécurité</span> et en apprenant de nouvelles technologies.<br><span class="bold">Mon travail sur ce projet: </span>je me suis occupé du développement Front-End et du design.',
+		sides: 4,
+		techno: [
+			{
+				img: 'adobexd.png',
+				name: 'AdobeXD'
+			},
+			{
+				img: 'htmlcss.png',
+				name: 'HTML/CSS'
+			},
+			{
+				img: 'js.png',
+				name: 'JavaScript'
+			},
+			{
+				img: 'nodejs.png',
+				name: 'Node.js'
+			},
+			{
+				img: 'nginx.png',
+				name: 'Nginx'
+			},
+			{
+				img: 'mysql.png',
+				name: 'MySQL'
+			}
 		]
 	},
 	{
@@ -98,41 +133,6 @@ const database = [
 			{
 				img: 'js.png',
 				name: 'JavaScript'
-			}
-		]
-	},
-	{
-		title: 'TriCycle',
-		cover: 'tricycle.png',
-		category: 'Application Mobile',
-		link: 'https://app-tricycle.com',
-		date: 'Novembre 2019 - Juin 2020',
-		description: 'TriCycle est une <span class="bold">application</span> permettant de scanner les codes barres de différents produits afin de savoir comment et où les <span class="bold">jeter/recycler</span>, aidé les utilisateurs à avoir des gestes plus <span class="bold">écologiques</span>, proposer des alternatives moins couteuses et avec moins d\'impact sur l\'environnement et à avoir un regard <span class="bold">positif</span> sur l\'écologie.<br><span class="bold">Mon travail sur ce projet: </span>Design de l\'application, du site et de l\'identité graphique, développement Front-End sur l\'application',
-		sides: 3,
-		techno: [
-			{
-				img: 'adobexd.png',
-				name: 'AdobeXD'
-			},
-			{
-				img: 'htmlcss.png',
-				name: 'HTML/CSS'
-			},
-			{
-				img: 'ionic.png',
-				name: 'Ionic'
-			},
-			{
-				img: 'nodejs.png',
-				name: 'Node.js'
-			},
-			{
-				img: 'nginx.png',
-				name: 'Nginx'
-			},
-			{
-				img: 'mongodb.png',
-				name: 'Mongodb'
 			}
 		]
 	},

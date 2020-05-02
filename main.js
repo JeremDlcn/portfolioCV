@@ -32,7 +32,7 @@ function template(data) {
 
 	details.id = "details";
 	more.className = "more";
-	out.src = "img/out.png";
+	out.src = "img/wout.png";
 	close.src = "img/close.png";
 	close.className = "close";
 	link.innerText = "Voir";

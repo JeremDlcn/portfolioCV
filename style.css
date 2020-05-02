@@ -877,7 +877,6 @@ main > section:first-of-type {
 	#sidePanel p {
 		font-size: .8rem;
 		margin: 0 0 1rem .5rem;
-		opacity: .7;
 	}
 	dialog{
 		top: 0;

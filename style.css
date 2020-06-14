@@ -21,6 +21,8 @@
 	--angular: #DD0031;
 	--ionic: #4689FE;
 	--flask: #4BC815;
+	--postgre:#336791;
+	--node:#83cd29;
 
 	/*Shadow*/
 	--shadow: 2px 4px 15px 2px rgba(126, 126, 126, 0.2);
@@ -799,7 +801,22 @@ main > section:first-of-type {
 	color: var(--flask);
 }
 
+.postgre {
+	background-color: var(--postgre);
+}
+.color-postgre {
+	color: var(--postgre);
+}
 
+.node {
+	background-color: var(--node);
+}
+.node img{
+	filter: brightness(600%);
+}
+.color-node {
+	color: var(--node);
+}
 
 
 /*----------------------------------------------------------------------------------------------*/

@@ -35,17 +35,21 @@ const database = [
 		]
 	},
 	{
-		title: 'DailyUI',
-		cover: 'dailyui.png',
-		category: 'UI / UX Design',
-		link: 'https://twitter.com/JeremDlcn',
-		date: 'Novembre 2019 - Mars 2020',
-		description: 'DailyUI est un <span class="bold">challenge</span> d\'une durée de 100 jours pendant lesquelles je dois réaliser <span class="bold">100 interfaces/créations graphiques</span> sur un élément imposé, pouvant aller d\'un simple icône à une landing page. Les sujets sont <span class="bold">variés</span> et me permettent de <span class="bold">sortir</span> de ma <span class="bold">zone de confort</span> en créant des interfaces originales. Ce challenge me permet de prendre de <span class="bold">m\'améliorer</span> en design d\'interface tout en m\'obligeant à garder un bon niveau de <span class="bold">qualité</span> pour chacune de mes créations.',
+		title: 'Limon',
+		cover: 'limon.png',
+		category: 'Site web/PWA',
+		link: 'https://limon.app-tricycle.com',
+		date: 'Mai 2020 - Juin 2020',
+		description: 'Limon est un <span class="bold">Projet étudiant</span> réalisé par groupe de 2, dont le but est de créer un site de streaming/VOD de films. La partie Front-End du site est faite grâce au framework Angular 9.1.7 et l\'API permettant l\'échange de données à été réalisé en Symfony 5.0.8.',
 		sides: 4,
 		techno: [
 			{
-				img: 'adobexd.png',
-				name: 'AdobeXD'
+				img: 'angular.png',
+				name: 'Angular'
+			},
+			{
+				img: 'symfony.png',
+				name: 'Symfony'
 			}
 		]
 
@@ -83,6 +87,22 @@ const database = [
 		]
 	},
 	{
+		title: 'DailyUI',
+		cover: 'dailyui.png',
+		category: 'UI / UX Design',
+		link: 'https://twitter.com/JeremDlcn',
+		date: 'Novembre 2019 - Mars 2020',
+		description: 'DailyUI est un <span class="bold">challenge</span> d\'une durée de 100 jours pendant lesquelles je dois réaliser <span class="bold">100 interfaces/créations graphiques</span> sur un élément imposé, pouvant aller d\'un simple icône à une landing page. Les sujets sont <span class="bold">variés</span> et me permettent de <span class="bold">sortir</span> de ma <span class="bold">zone de confort</span> en créant des interfaces originales. Ce challenge me permet de prendre de <span class="bold">m\'améliorer</span> en design d\'interface tout en m\'obligeant à garder un bon niveau de <span class="bold">qualité</span> pour chacune de mes créations.',
+		sides: 4,
+		techno: [
+			{
+				img: 'adobexd.png',
+				name: 'AdobeXD'
+			}
+		]
+
+	},
+	{
 		title: 'Cow-snack',
 		cover: 'cow-snack.png',
 		category: 'Site web',
@@ -114,25 +134,6 @@ const database = [
 			{
 				img: 'mysql.png',
 				name: 'MySQL'
-			}
-		]
-	},
-	{
-		title: 'Smile',
-		cover: 'smile.png',
-		category: 'Jeu de Société & Site Web',
-		link: 'https://smile-nantes.000webhostapp.com/',
-		date: 'Novembre 2019 - Janvier 2020',
-		description: 'Smile est une équipe d\'étudiant ayant pour mission d\'expliquer les <span class="bold">méthodes agiles</span> de manière ludique à travers un <span class="bold">jeu de société</span>. Ce jeu de plateau fait s\'affronter 2 équipes: la première équipe représente les méthodes "classiques" de gestion de projet et la seconde représente les méthodes agiles. À chaque tour les équipes devront avancer afin de réaliser des <span class="bold">activités</span> pour gagner un maximum de points auprès du client.<br><span class="bold">Mon travail sur ce projet: </span> j\'ai réalisé le site web servant aux activités, les cartes et aidé dans la création des règles du jeu.',
-		sides: 4,
-		techno: [
-			{
-				img: 'htmlcss.png',
-				name: 'HTML/CSS'
-			},
-			{
-				img: 'js.png',
-				name: 'JavaScript'
 			}
 		]
 	},

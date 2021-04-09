@@ -137,7 +137,7 @@ const database = [
 		title: 'Voilier Handicap',
 		cover: 'voilier.png',
 		category: 'IoT & Site Web',
-		link: 'https://voilierhandicap.000webhostapp.com/',
+		link: 'https://voilierhandicap-projet.000webhostapp.com/',
 		date: 'Mars 2018',
 		description: 'Le projet "Voilier Handicap" est un projet de Terminale visant à adapter un voilier de course pour l\'adapter aux personnes à mobilité réduite. Nous avons créé un système de reconnaissance de mouvement permettant aux personnes à mobilité réduites de manoeuvrer le voilier à distance, d\'autre part j\'ai créé une application mobile permettant à l\'accompagnateur de commander et sécuriser le voilier, on peut y voir la vitesse du voilier en temps réel et monter ou descendre la Grand-Voile tout en restant en cabine.',
 		sides: 2,

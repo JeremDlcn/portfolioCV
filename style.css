@@ -15,14 +15,15 @@
 	--js2: #e4cb02;
 	--xd: #FF26BE;
 	--py: #2D689B;
-	--c: #00599D;
+	--vue: #54CF97;
 	--html: #FF6C39;
 	--css: #71B2DE;
 	--angular: #DD0031;
 	--ionic: #4689FE;
-	--flask: #4BC815;
+	--flask: #CBCBCB;
 	--postgre:#336791;
 	--node:#83cd29;
+	--nginx: #00A03D;
 
 	/*Shadow*/
 	--shadow: 2px 4px 15px 2px rgba(126, 126, 126, 0.2);
@@ -229,6 +230,11 @@ a{
 	position: relative;
 	-webkit-box-shadow: var(--shadow);
 	        box-shadow: var(--shadow);
+}
+.skillContainer > img {
+	height: 9.1rem;
+	width: 9.1rem;
+	object-fit: contain;
 }
 
 .skillContainer > p {
@@ -752,11 +758,11 @@ main > section:first-of-type {
 	color: var(--xd);
 }
 
-.c {
-	background-color: var(--c);
+.vue {
+	background-color: var(--vue);
 }
-.color-c {
-	color: var(--c);
+.color-vue {
+	color: var(--vue);
 }
 
 
@@ -789,6 +795,12 @@ main > section:first-of-type {
 }
 .color-angular {
 	color: var(--angular);
+}
+.nginx {
+	background-color: var(--nginx);
+}
+.color-nginx {
+	color: var(--nginx);
 }
 
 .flask {

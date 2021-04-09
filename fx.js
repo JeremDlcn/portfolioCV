@@ -2,20 +2,19 @@ let card = document.querySelectorAll('.skillContainer');
 let percent = document.querySelectorAll('.percent');
 
 
-const indexes = [50, 50, 40, 30, 25, 90, 90, 30, 90, 25, 40];
+const indexes = [];
+percent.forEach(elt => indexes.push(elt.textContent));
 
-for (let i = 0; i < card.length; i++) {
-	card[i].addEventListener('mouseenter', () => {
+card.forEach((elt,i) => {
+	elt.addEventListener('mouseenter', ()=>{
 		let value = indexes[i];
 		let y = 0;
 		let inv = setInterval(() => {
-			if (y <= value)
-				percent[i].innerHTML = y++;
-			else
-				clearInterval(inv);
+			if (y <= value)	percent[i].innerHTML = y++;
+			else clearInterval(inv);
 		}, 15)
 		percent[i].textContent = y;
-
-
 	});
-}
+})
+
+

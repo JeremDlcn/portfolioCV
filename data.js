@@ -1,7 +1,7 @@
 const database = [
 	{
 		title: 'TriCycle',
-		cover: 'tricycle.png',
+		cover: 'tricycle/1.png',
 		category: 'Application Mobile',
 		link: 'https://app-tricycle.com',
 		date: 'Novembre 2019 - Juin 2020',
@@ -9,16 +9,12 @@ const database = [
 		sides: 3,
 		techno: [
 			{
-				img: 'adobexd.png',
-				name: 'AdobeXD'
-			},
-			{
 				img: 'htmlcss.png',
 				name: 'HTML/CSS'
 			},
 			{
-				img: 'ionic.png',
-				name: 'Ionic'
+				img: 'nativescript.png',
+				name: 'Nativescript Vue'
 			},
 			{
 				img: 'nodejs.png',

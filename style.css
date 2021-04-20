@@ -101,6 +101,43 @@ a{
 	left: 5vw;
 }
 
+.social-head {
+	display: flex;
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	list-style-type: none;
+	padding-bottom: 1rem;
+	margin-left: 2rem;
+}
+.social-head li {
+	background: var(--white);
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1rem;
+	transition: transform .4s cubic-bezier(0.87, 0, 0.13, 1);
+}
+.social-head li:hover {
+	transform: scale(1.08);
+}
+
+.social-head a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.social-head img {
+	width: 1.8rem;
+	height: 1.8rem;
+	object-fit: contain;
+}
+
 #sidePanel {
 	width: 50%;
 	display: -webkit-box;
@@ -167,7 +204,7 @@ a{
 }
 
 #scroll {
-	height: 25%;
+	height: 15rem;
 	background-color: var(--light-gray);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -180,6 +217,7 @@ a{
 	        align-items: flex-start;
 	padding-top: 2rem;
 }
+
 
 #scroll img {
 	width: 25px;
@@ -517,6 +555,11 @@ footer div, footer a {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+}
+
+#social {
+	display: flex;
+	list-style-type: none;
 }
 
 #social img {
@@ -968,6 +1011,9 @@ main > section:first-of-type {
 /*-----Mobile Large-----*/
 @media screen and (max-width: 600px) 
 {
+	#scroll img{
+		display: none;
+	}
 	.projectContainer .visual >img {
 		width: 78vw;
 		border-radius: 10px;

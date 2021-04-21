@@ -1011,6 +1011,9 @@ main > section:first-of-type {
 /*-----Mobile Large-----*/
 @media screen and (max-width: 600px) 
 {
+	.social-head {
+		bottom: 5rem;
+	}
 	#scroll img{
 		display: none;
 	}

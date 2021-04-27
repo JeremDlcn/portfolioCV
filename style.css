@@ -10,6 +10,8 @@
 	--olive-green: #446740;
 	--correct: #1FE41B;
 
+	--main-clr: #446740;
+
 	/*Tehno colors*/
 	--js: #F7DF1E;
 	--js2: #e4cb02;
@@ -79,6 +81,19 @@ a{
 #cover {
 	height: 100vh;
 	margin-bottom: 15rem;
+}
+
+.back-home {
+	border: none;
+	padding: .4rem .7rem;
+	background-color: var(--main-clr);
+	color: white;
+	border-radius: 5px;
+	margin: .5rem 1rem;
+	cursor: pointer;
+}
+.back-home a {
+	color: white;
 }
 
 #portfolio {

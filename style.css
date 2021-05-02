@@ -241,13 +241,13 @@ a{
 
 
 
-#skills h2, #project h2 {
+#skills h2, #project h2, #article h2 {
 	font-size: 3rem;
 	color: var(--title-font);
 	margin-bottom: 4rem;
 }
 
-#skills, #project {
+#article, #skills, #project {
 	margin-bottom: 11rem;
 	padding-left: 10vw;
 	padding-right: 10vw;
@@ -1095,6 +1095,28 @@ main > section:first-of-type {
 	}
 }
 
+#article {
+
+}
+.card-article {
+	background-color: var(--footer-gray);
+	display: flex;
+	padding: 1rem;
+	border-radius: 5px;
+	padding-right: 1rem;
+}
+.card-article img {
+	width: auto;
+	height: 15rem;
+	margin-right: 2rem;
+	border-radius: 5px;
+	aspect-ratio: 16 / 9;
+}
+.card-article figcaption {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}
 
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Animation-------------------------------------------*/

@@ -157,7 +157,7 @@
 .article .article-sources-item, .article .article-content li {
     margin: 0.5rem 0;
     margin-left: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .article .article-sources-item::marker, .article .article-content li::marker {
     color: var(--main-clr);

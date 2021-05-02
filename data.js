@@ -1,11 +1,11 @@
 const database = [
 	{
-		title: 'TriCycle',
-		cover: 'tricycle/1.png',
+		title: 'TricycleApp',
+		cover: 'tricycleapp/1.png',
 		category: 'Application Mobile',
 		link: 'https://app-tricycle.com',
 		date: 'Novembre 2019 - Juin 2020',
-		description: 'TriCycle est une <span class="bold">application</span> permettant de scanner les codes barres de différents produits afin de savoir comment et où les <span class="bold">jeter/recycler</span>, aidé les utilisateurs à avoir des gestes plus <span class="bold">écologiques</span>, proposer des alternatives moins couteuses et avec moins d\'impact sur l\'environnement et à avoir un regard <span class="bold">positif</span> sur l\'écologie.<br><span class="bold">Mon travail sur ce projet: </span>Design de l\'application, du site et de l\'identité graphique, développement Front-End sur l\'application',
+		description: 'TricycleApp est une <span class="bold">application</span> permettant de scanner les codes barres de différents produits afin de savoir comment et où les <span class="bold">jeter/recycler</span>, aidé les utilisateurs à avoir des gestes plus <span class="bold">écologiques</span>, proposer des alternatives moins couteuses et avec moins d\'impact sur l\'environnement et à avoir un regard <span class="bold">positif</span> sur l\'écologie.<br><span class="bold">Mon travail sur ce projet: </span>Design de l\'application, du site et de l\'identité graphique, développement Front-End sur l\'application',
 		sides: 3,
 		techno: [
 			{

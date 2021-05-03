@@ -222,8 +222,11 @@
     margin-bottom: 1rem;
 }
 @media (max-width: 720px) {
-    .article-header {
-        flex-direction: column;
+    .article-header p{
+        display: none;
+    }
+    .article-thumbnail img {
+        border-radius: .5rem;
     }
     .article-title {
         line-height: 2.8rem;

@@ -232,6 +232,7 @@
    }
     .article-thumbnail {
         margin: 1.5rem 0;
+        margin-bottom: 12rem;
    }
     .article-date {
         font-size: 0.9rem;

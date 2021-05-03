@@ -1112,12 +1112,26 @@ main > section:first-of-type {
 	border-radius: 5px;
 	aspect-ratio: 16 / 9;
 }
-.card-article figcaption {
+.card-article h3 {
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+.card-article p {
+	/* font-size: 1.2rem; */
 	margin-top: 1rem;
 }
 
+@media (max-width: 900px) {
+	.card-article {
+		flex-direction: column;
+	}
+	.card-article img {
+		height: auto;
+		width: 100%;
+		margin-left: 0;
+	}
+}
 /*----------------------------------------------------------------------------------------------*/
 /*-----------------------------------------Animation-------------------------------------------*/
 

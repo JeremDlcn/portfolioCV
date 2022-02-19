@@ -238,7 +238,9 @@ a{
 	width: 25px;
 }
 
-
+.profil {
+	border-radius: 50%;
+}
 
 
 #skills h2, #project h2, #article h2 {

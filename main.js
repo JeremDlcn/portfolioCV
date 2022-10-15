@@ -86,7 +86,7 @@ function template(data) {
 	main.appendChild(more);
 	details.appendChild(close);
 	details.appendChild(main);
-	document.querySelector('body').appendChild(details);
+	document.querySelector('body').insertBefore(details, document.querySelector('.modal'));
 	open();
 }
 
@@ -105,21 +105,14 @@ function open() {
 
 
 	let zoom = document.querySelectorAll('.more img');
-	for (let i = 0; i < zoom.length; i++) {
-		zoom[i].addEventListener('click', () => {
-			if (zoom[i].classList.contains('activate')) {
-				zoom[i].classList.remove('activate');
-			}
-			else {
-				for (let o = 0; o < zoom.length; o++) {
-					zoom[o].classList.remove('activate');
-					zoom[o].title = '';
-				}
-				zoom[i].classList.add('activate');
-				zoom[i].title = 'Cliquez sur l\'image pour revenir en arrière'
-			}
-		});
-	}
+
+	zoom.forEach(elt => {
+		elt.addEventListener('click', () => {
+			document.querySelector('.modal-image').src = elt.src;
+			document.querySelector('.modal').classList.add('show');
+			document.querySelector('#details').remove();
+		})
+	});
 }
 
 
@@ -144,3 +137,9 @@ document.querySelector('#copyButton').addEventListener('click', () => {
 	}, 2000);
 
 });
+
+
+// Modal controls
+document.querySelector('.modal').addEventListener('click', ()=> {
+	document.querySelector('.modal').classList.remove('show');
+})
